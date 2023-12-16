@@ -46,4 +46,19 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: _site
+    - name: Deploy Pull Request 🚀
+      if: github.event_name == 'pull_request'
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: _site
+        token: ${{ secrets.GITHUB_TOKEN }}
+        target_branch: ${{ github.head_ref }}
+        committer_from_gh: true
+        committer_name: ${{ github.event.pull_request.user.login }}
+        committer_email: ${{ github.event.pull_request.user.email }}
+
+    - name: Fix permission
+        run:
+          chmod a+x bin/*
+          git commit -am "fix permission, add execute permision to bin/deploy"
 
