@@ -7,9 +7,10 @@ truth for picking the work back up.
 
 - **Branch `redesign`** (this branch). The old al-folio theme is deleted. The first draft Rooj
   rejected (big hero, pill buttons, card grid, numbered headings) was replaced on 20 Oct 2026 by the
-  **real site, built from layout G**: `index.html`, `photos/index.html`, `bookshelf/index.html`,
-  `404.html`, `assets/css/site.css`, self-hosted Source Serif 4 in `assets/fonts/` (OFL), and a
-  monochrome favicon. No JavaScript, no workflow. Photos are placeholders until Rooj sends them.
+  **real site, built from layout G**, in **`docs/`**: `index.html`, `photos/index.html`,
+  `bookshelf/index.html`, `404.html`, `assets/css/site.css`, self-hosted Source Serif 4 in
+  `assets/fonts/` (OFL), and a monochrome favicon. No JavaScript, no workflow. Photos are
+  placeholders until Rooj sends them. Design tokens and rules are in `DESIGN.md`.
   Checked at 390px and 1280px in light and dark: self-hosted font loads, no third-party requests,
   no horizontal scroll, no console errors, all internal links resolve.
 - **Mockup**: a claude.ai Design canvas (private to Rooj):
@@ -54,7 +55,7 @@ truth for picking the work back up.
 | Look | Serif, warm off-white, monochrome underlined links, dark mode follows the system (no toggle) |
 | Footer | "Last updated" date |
 | Domain | Keep `rroojrooj.github.io` |
-| Hosting | GitHub Pages **deploy from branch `master` / root**. Rooj agreed to flip this in Settings → Pages himself. |
+| Hosting | GitHub Pages **deploy from branch `master` / `/docs`** (changed from root on 20 Oct 2026 so the notes and mockups stay off the website). Rooj agreed to change this in Settings → Pages. |
 | Stats | Yes. Proposed GoatCounter (free, no cookies, so no cookie banner); needs Rooj to sign up and send the site code. |
 | Layout | **G · Mix 2**: name, intro, then one wide photo; small photos floated inside the rows they illustrate; Bristol Blockchain Society block with a loose collage. No rigid grid. |
 | Bristol Blockchain Society | Its own block on Home with **a few photos** from running the society. Separate from the Photos page (pictures Rooj took over the years). |
@@ -179,8 +180,8 @@ only their own rows narrow.
 3. ~~Check it~~ (done; see "Where things stand"). Re-check after the photos go in.
 3a. Swap the placeholders for Rooj's photos (README.md "Adding photos"), strip EXIF first.
 4. Add GoatCounter once Rooj has the code.
-5. Push, then merge to `master` (ask Rooj whether he wants a PR). Rooj sets Pages → Deploy from
-   branch → `master` / root. Check the live site, then ask before deleting the `gh-pages` branch.
+5. Push, then merge to `master` (ask Rooj whether to use a PR). Rooj sets Pages → Deploy from
+   branch → `master` → `/docs`. Check the live site, then ask before deleting the `gh-pages` branch.
 
 ## Reference
 
