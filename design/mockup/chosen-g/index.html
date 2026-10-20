@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rooj Rinchokechai · G Mix 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="base.css">
+<script>/* mockup only: ?theme=dark|light lets the overview page force a theme */
+var t = new URLSearchParams(location.search).get('theme'); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t;</script>
+<style>
+.bbs-line { margin: -8px 0 14px; }
+.bbs-photos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.t { float: right; width: 92px; margin: 4px 0 8px 18px; }
+.t .ph { font-size: 12px; }
+.now article.wf { display: flow-root; }
+.now article.wf p + p { margin-top: 2px; }
+.plate { margin-bottom: -16px; }
+.plate.plate-low { margin: -20px 0 0; }
+.bbs-four { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.bbs-collage { display: grid; grid-template-columns: 2fr 1fr; gap: 8px; }
+.bbs-collage .big { grid-row: span 2; }
+.bbs-collage .big .ph { height: 100%; }
+@media (max-width: 520px) {
+  .t { width: 64px; margin-left: 12px; }
+  .bbs-four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+</style>
+</head>
+<body>
+<main>
+<nav aria-label="Site"><span aria-current="page">Home</span><a href="#">Photos</a><a href="#">Bookshelf</a></nav>
+
+<header>
+<h1>Rooj Rinchokechai</h1>
+<p class="muted">Bangkok, Thailand</p>
+<p class="links"><a href="mailto:workwithrooj@gmail.com">workwithrooj@gmail.com</a><span class="dot" aria-hidden="true">·</span><a href="https://www.linkedin.com/in/roojrin">LinkedIn</a><span class="dot" aria-hidden="true">·</span><a href="https://github.com/rroojrooj">GitHub</a></p>
+</header>
+
+<p class="intro">I'm building Belfort, an AI analyst for individual investors, and making high-protein gelato at Wim's Lab. Away from work, I run marathons, play too much golf and look after three giant tortoises.</p>
+<figure class="plate plate-low"><div class="ph" role="img" aria-label="Photo placeholder: One wide photo you love" style="aspect-ratio: 3 / 2;">One wide photo you love</div><figcaption>[Place, year]</figcaption></figure>
+<section aria-labelledby="now-h">
+<h2 id="now-h">Now</h2>
+<div class="now">
+<article>
+<p><strong>Belfort</strong> <span class="muted">· Founder · 2025–now</span></p>
+<p>An AI analyst for individual investors, from finding an idea to telling you, after every earnings report, whether your reasons for owning it still hold. Fund-grade research, priced for everyone.</p>
+<p class="meta"><a href="https://www.belfortagent.xyz">belfortagent.xyz</a><span aria-hidden="true">·</span><a href="https://x.com/BelfortResearch">@BelfortResearch</a></p>
+</article>
+<article class="wf">
+<span class="t"><div class="ph" role="img" aria-label="Photo placeholder: gelato" style="aspect-ratio: 1 / 1;">gelato</div></span>
+<p><strong>Wim's Lab</strong> <span class="muted">· Co-founder &amp; head chef · 2025–now</span></p>
+<p>Premium high-protein gelato. One of four co-founders; I create every flavour.</p>
+<p class="meta"><a href="https://www.instagram.com/wimslab_icecream/">Instagram</a></p>
+</article>
+</div>
+</section>
+
+<section aria-labelledby="out-h">
+<h2 id="out-h">Outside work</h2>
+<div class="rows">
+<span class="label">Running</span><span><span class="t"><div class="ph" role="img" aria-label="Photo placeholder: marathon" style="aspect-ratio: 1 / 1;">marathon</div></span>Marathons in Tokyo and Cape Town, 2026. Shorter races in Sydney, New York, Bath and Bristol.</span>
+<span class="label">Golf</span><span>Addicted enough to start building my own simulator, <a href="https://github.com/rroojrooj/Open-Birdie">Open-Birdie</a>.</span>
+<span class="label">Also</span><span>Bouldering, Olympic weightlifting, scuba diving.</span>
+<span class="label">Music</span><span>Guitar and vocals. Queen, the Beatles, Bob Dylan, John Mayer, Eric Clapton, B.B. King, Oasis, Taylor Swift.</span>
+<span class="label">At home</span><span><span class="t"><div class="ph" role="img" aria-label="Photo placeholder: tortoises" style="aspect-ratio: 1 / 1;">tortoises</div></span>A chocolate Labrador, a beagle and three Aldabra giant tortoises.</span>
+<span class="label">On my mind</span><span>Meaning, happiness and wealth, and how they fit together.</span>
+<span class="label">Reading</span><span><a href="#">The bookshelf</a></span>
+<span class="label">Photos</span><span><a href="#">Pictures I've taken</a></span>
+</div>
+</section>
+
+<section aria-labelledby="bbs-h" class="bbs">
+<h2 id="bbs-h">Bristol Blockchain Society</h2>
+<p class="bbs-line">I started it at university in 2022 and ran it for two years.</p>
+<figure><div class="bbs-collage"><div class="big"><div class="ph" role="img" aria-label="Photo placeholder: the best society photo" style="aspect-ratio: ;">the best society photo</div></div><div class="ph" role="img" aria-label="Photo placeholder: the team" style="aspect-ratio: 4 / 3; font-size: 12px;">the team</div><div class="ph" role="img" aria-label="Photo placeholder: a talk" style="aspect-ratio: 4 / 3; font-size: 12px;">a talk</div></div><figcaption>Bristol, 2022–2024</figcaption></figure>
+</section>
+<section aria-label="More" class="more">
+<details>
+<summary>Other projects</summary>
+<div>
+<p><strong>Closed-loop DDoS detection</strong> <span class="muted">· 2025</span><br>Final-year group project at Bristol: ML detectors, simulated attacks and automated retraining. <span class="muted"><a href="https://github.com/rroojrooj/RP3-ML-DDoS-Detection-Final">code</a> · <a href="https://github.com/rroojrooj/RP3-ML-DDoS-Detection-Final/blob/main/paper-ML_DDoS_Detection.pdf">report</a></span></p>
+<p><strong>Bangkok childcare centres</strong> <span class="muted">· 2024</span><br>Put the records of 271 public childcare centres in one place for the city. <span class="muted"><a href="https://github.com/rroojrooj/BMA_ChildCenters">code</a></span></p>
+<p><strong>Fluid Options</strong> <span class="muted">· 2022</span><br>An options market where buyers stream premiums. Won Superfluid's Best DeFi Hack at ETHOnline. <span class="muted"><a href="https://ethglobal.com/showcase/fop-fluid-options-jjg01">showcase</a></span></p>
+</div>
+</details>
+<details>
+<summary>Background</summary>
+<p>BEng Computer Science and Electronics, University of Bristol (First Class, 2025). Before Belfort: SCB 10X, Token Unlocks, Kiatnakin Phatra, TISCO and the Bangkok Metropolitan Administration. More on <a href="https://www.linkedin.com/in/roojrin">LinkedIn</a>.</p>
+</details>
+</section>
+
+<footer>
+<p>Happy to hear from anyone working on AI, investing or good food.</p>
+<p>Last updated 20 October 2026</p>
+</footer>
+</main>
+</body>
+</html>

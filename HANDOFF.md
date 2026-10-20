@@ -21,8 +21,13 @@ truth for picking the work back up.
   These are "Design Component" files: ordinary HTML with inline styles. `{{c.bg}}`-style holes are
   theme colours set in each file's `<script>` block. They need the canvas runtime to render, so read
   them as specs; don't serve them.
-- **Waiting on Rooj**: pick a direction (or a mix, e.g. A plus D's photo strip), send photos, and
-  approve the copy below.
+- **Direction chosen (20 Oct 2026, local session): G · Mix 2** — direction A's type and colours,
+  with photos mixed in loosely (Rooj liked B and C: "no exactly fixed format"). The real-HTML
+  mockup is in `design/mockup/chosen-g/` (`index.html` + `base.css`, `preview.png` shows desktop
+  light and phone dark). It is the spec for the build. All seven variants compared (A Strip,
+  B Plate, C Margin, D Portrait, E Contact sheet, F/G mixes) live in gstack's design folder,
+  `~/.gstack/projects/rroojrooj-rroojrooj.github.io/designs/home-photos-20261020/`.
+- **Waiting on Rooj**: the photos (see "Home page photo slots" below), and approval of the copy.
 - **Live site today**: the `gh-pages` branch, built from al-folio in Dec 2023. It's broken because
   every asset loads from `/home/...` (`baseurl: /home`). `master` still has the old theme and a
   `deploy.yml` that isn't valid YAML.
@@ -48,6 +53,9 @@ truth for picking the work back up.
 | Domain | Keep `rroojrooj.github.io` |
 | Hosting | GitHub Pages **deploy from branch `master` / root**. Rooj agreed to flip this in Settings → Pages himself. |
 | Stats | Yes. Proposed GoatCounter (free, no cookies, so no cookie banner); needs Rooj to sign up and send the site code. |
+| Layout | **G · Mix 2**: name, intro, then one wide photo; small photos floated inside the rows they illustrate; Bristol Blockchain Society block with a loose collage. No rigid grid. |
+| Bristol Blockchain Society | Its own block on Home with **a few photos** from running the society. Separate from the Photos page (pictures Rooj took over the years). |
+| Photo of Rooj | Still no portrait (variant D was shown and not picked). |
 
 ## Stack (see `design/research/tech-stack.md`)
 
@@ -63,7 +71,7 @@ non-CV side as the main section → everything else folded away.
 1. **Rooj Rinchokechai** / Bangkok, Thailand / workwithrooj@gmail.com · LinkedIn · GitHub
 2. Intro: "I'm building Belfort, an AI analyst for individual investors, and making high-protein
    gelato at Wim's Lab. Away from work, I run marathons, play too much golf and look after three
-   giant tortoises."
+   giant tortoises." Then the wide photo (layout G).
 3. **Now**
    - **Belfort** · Founder · 2025–now — "An AI analyst for individual investors — from finding an
      idea to telling you, after every earnings report, whether your reasons for owning it still hold.
@@ -76,13 +84,17 @@ non-CV side as the main section → everything else folded away.
    - **Wim's Lab** · Co-founder & head chef · 2025–now — "Premium high-protein gelato. One of four
      co-founders; I create every flavour." Link: [Instagram](https://www.instagram.com/wimslab_icecream/)
 4. **Outside work** (label → line)
-   - Running → Marathons in Tokyo and Cape Town.
+   - Running → Marathons in Tokyo and Cape Town, 2026. Shorter races in Sydney, New York, Bath and Bristol.
+     (Facts from Rooj: Tokyo Marathon 2026, Cape Town Marathon 2026, TCS Sydney Marathon 10k 2025,
+     TCS New York Marathon 5k 2025, Bath Half 2024 and 2025, Bristol 10k 2025.)
    - Golf → Addicted enough to start building my own simulator, [Open-Birdie](https://github.com/rroojrooj/Open-Birdie).
    - Also → Bouldering, Olympic weightlifting, scuba diving.
    - Music → Guitar and vocals. Queen, the Beatles, Bob Dylan, John Mayer, Eric Clapton, B.B. King, Oasis, Taylor Swift.
    - At home → A chocolate Labrador, a beagle and three Aldabra giant tortoises.
    - On my mind → Meaning, happiness and wealth, and how they fit together.
    - Reading → The bookshelf · Photos → Pictures I've taken
+   - **Bristol Blockchain Society** (own block after Outside work): "I started it at university in
+     2022 and ran it for two years." + a collage (1 big, 2 small), captioned "Bristol, 2022–2024".
 5. Dropdown **Other projects** (`<details>`, closed by default)
    - Closed-loop DDoS detection · 2025 — Final-year group project at Bristol: ML detectors,
      simulated attacks and automated retraining.
@@ -93,7 +105,7 @@ non-CV side as the main section → everything else folded away.
    - Fluid Options · 2022 — An options market where buyers stream premiums. Won Superfluid's Best
      DeFi Hack at ETHOnline. [showcase](https://ethglobal.com/showcase/fop-fluid-options-jjg01)
 6. Dropdown **Background** — "BEng Computer Science and Electronics, University of Bristol (First
-   Class, 2025). Founded the Bristol Blockchain Society. Before Belfort: SCB 10X, Token Unlocks,
+   Class, 2025). Before Belfort: SCB 10X, Token Unlocks,
    Kiatnakin Phatra, TISCO and the Bangkok Metropolitan Administration. More on LinkedIn."
 7. Footer: "Happy to hear from anyone working on AI, investing or good food." / "Last updated …"
 
@@ -134,6 +146,19 @@ not on the site; they're in the private transcripts.
 Never: icons, pill buttons, cards, hover lifts, hero sections, numbered headings, animation, sticky
 nav, a theme toggle.
 
+## Home page photo slots (layout G)
+
+| Slot | Shape | Suggested subject |
+|---|---|---|
+| Wide photo under the intro | 3:2 landscape, full column width | One photo Rooj loves, captioned "Place, year" |
+| Thumb beside Wim's Lab | square, ~92px | A gelato |
+| Thumb beside Running | square | A marathon |
+| Thumb beside At home | square | The tortoises |
+| Bristol Blockchain Society | 1 big + 2 small (4:3) | Society events, the team, a talk |
+
+Same rules as the Photos page: strip EXIF/GPS, resize. On phones the thumbs shrink to ~64px and
+only their own rows narrow.
+
 ## Photos page plan
 
 - Files at `photos/<year>/<slug>.jpg`. Resize to about 2000px on the long edge, plus a roughly 800px
@@ -144,7 +169,8 @@ nav, a theme toggle.
 
 ## Next steps
 
-1. Rooj picks a direction (or a mix) and sends photos with place and year.
+1. ~~Rooj picks a direction~~ (done: G). Rooj sends photos with place and year, including the
+   Bristol Blockchain Society ones.
 2. Rebuild `index.html`, `photos/index.html`, `bookshelf/index.html`, `404.html` and one stylesheet
    with self-hosted fonts. Delete `.github/workflows/deploy.yml` and the old draft CSS/JS.
 3. Check it: screenshots at desktop and phone width in light and dark, no horizontal scroll, every

@@ -6,7 +6,9 @@ Rooj Rinchokechai's personal site. Plain HTML + CSS served by GitHub Pages, no b
 
 - `HANDOFF.md` is the source of truth for the redesign: decisions, current copy, the four design
   directions, the photos plan and the next steps. Read it before changing anything.
-- `design/mockup/*.dc.html` are the mockup boards (Main = A Paper, VariantB = Index, VariantC = Letter,
+- `design/mockup/chosen-g/` is the chosen home layout (G · Mix 2) as real HTML/CSS. It is the
+  build spec; open `index.html` in a browser.
+- `design/mockup/*.dc.html` are the earlier canvas boards (Main = A Paper, VariantB = Index, VariantC = Letter,
   VariantD = Photo-first, plus Photos, Bookshelf and HomeMobile). They need the claude.ai canvas
   runtime, so read them as specs; don't serve them. `design/research/*.md` explain the choices.
 - Work on branch `redesign`. Don't push to or merge into `master` without asking. `gh-pages` is the
