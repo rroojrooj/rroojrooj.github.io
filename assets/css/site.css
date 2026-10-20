@@ -1,0 +1,164 @@
+/* rroojrooj.github.io — one stylesheet for every page. Layout G (see design/mockup/chosen-g). */
+
+@font-face {
+  font-family: 'Source Serif 4';
+  src: url('../fonts/source-serif-4-latin-opsz-normal.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg: #FBF9F3;
+  --text: #1C1B19;
+  --muted: #6E6B64;
+  --rule: #E5E1D6;
+  --line: #BDB8AC;
+  --ph: #ECE7DB;
+  --ph-text: #8F8A7F;
+  color-scheme: light;
+}
+
+/* Dark mode follows the visitor's system setting. There is no toggle. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161512;
+    --text: #E8E5DC;
+    --muted: #9A968C;
+    --rule: #2E2C27;
+    --line: #5A574F;
+    --ph: #24221E;
+    --ph-text: #77736A;
+    color-scheme: dark;
+  }
+}
+
+/* ---------- Base ---------- */
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.6;
+  font-optical-sizing: auto;
+}
+p, h1, h2, h3, figure, ul { margin: 0; }
+ul { padding: 0; list-style: none; }
+img { display: block; width: 100%; height: auto; }
+strong { font-weight: 600; }
+
+a {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-color: var(--line);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+a:hover { text-decoration-color: currentColor; }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }
+
+.muted, .muted a { color: var(--muted); }
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 64px 20px 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+main.wide { max-width: 1040px; }
+main.wide > .narrow { max-width: 600px; }
+
+/* ---------- Shared parts ---------- */
+
+nav { display: flex; gap: 22px; font-size: 15px; color: var(--muted); }
+nav a { color: var(--muted); }
+nav [aria-current="page"] { color: var(--text); }
+
+header { display: flex; flex-direction: column; gap: 4px; }
+h1 { font-size: 34px; line-height: 1.2; font-weight: 600; letter-spacing: -0.01em; }
+h2 { margin: 0 0 18px; font-size: 20px; line-height: 1.3; font-weight: 600; }
+.links { margin-top: 12px; display: flex; flex-wrap: wrap; column-gap: 10px; row-gap: 4px; font-size: 16px; }
+.dot { color: var(--muted); }
+
+footer {
+  padding-top: 18px;
+  border-top: 1px solid var(--rule);
+  font-size: 15px;
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+figcaption { margin-top: 6px; font-size: 14px; color: var(--muted); line-height: 1.4; }
+
+/* Photo placeholder until the real photo is added: a calm block naming what goes there. */
+.ph {
+  background: var(--ph);
+  color: var(--ph-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 13px;
+  padding: 8px;
+  width: 100%;
+}
+
+/* ---------- Home ---------- */
+
+.intro { font-size: 20px; line-height: 1.55; }
+.lead-photo { margin-top: -20px; }
+
+.now { display: flex; flex-direction: column; gap: 26px; }
+.now article { display: flow-root; }
+.now article p + p { margin-top: 2px; }
+.now .meta { font-size: 16px; display: flex; gap: 10px; color: var(--muted); }
+
+.rows { display: grid; grid-template-columns: 112px minmax(0, 1fr); column-gap: 20px; row-gap: 10px; }
+.rows > dt { color: var(--muted); }
+.rows > dd { margin: 0; display: flow-root; }
+
+/* Small photos float inside the text they illustrate, so only their own rows narrow. */
+.thumb { float: right; width: 92px; margin: 4px 0 8px 18px; }
+
+.society-line { margin: -8px 0 14px; }
+.collage { display: grid; grid-template-columns: 2fr 1fr; gap: 8px; }
+.collage .big { grid-row: span 2; }
+.collage .big > .ph, .collage .big > img { height: 100%; object-fit: cover; }
+
+.more { display: flex; flex-direction: column; gap: 12px; font-size: 17px; }
+summary { cursor: pointer; color: var(--muted); width: fit-content; }
+details > div, details > p { margin: 14px 0 6px 18px; }
+details > div { display: flex; flex-direction: column; gap: 14px; }
+
+/* ---------- Photos ---------- */
+
+.page-intro { display: flex; flex-direction: column; gap: 8px; }
+.year { display: flex; flex-direction: column; gap: 16px; }
+.year h2 { margin: 0; font-variant-numeric: tabular-nums; }
+.gallery { column-width: 300px; column-gap: 20px; }
+.gallery figure { margin: 0 0 22px; break-inside: avoid; }
+.gallery a { text-decoration: none; display: block; }
+
+/* ---------- Bookshelf ---------- */
+
+.shelf { display: flex; flex-direction: column; gap: 36px; }
+.shelf h2 { margin-bottom: 8px; font-size: 15px; font-weight: 400; color: var(--muted); }
+.shelf li + li { margin-top: 4px; }
+
+/* ---------- Small screens ---------- */
+
+@media (max-width: 520px) {
+  main { padding: 40px 20px 56px; gap: 44px; }
+  h1 { font-size: 30px; }
+  .intro { font-size: 19px; }
+  .rows { grid-template-columns: 88px minmax(0, 1fr); column-gap: 14px; }
+  .thumb { width: 64px; margin-left: 12px; }
+}

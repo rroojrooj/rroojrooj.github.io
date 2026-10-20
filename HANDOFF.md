@@ -5,10 +5,13 @@ truth for picking the work back up.
 
 ## Where things stand
 
-- **Branch `redesign`** (this branch). The old al-folio theme is deleted.
-  `index.html`, `assets/`, `404.html`, `README.md` and `.github/workflows/deploy.yml` here are a
-  **first draft that Rooj rejected** as too template-like (big hero, pill buttons, card grid, numbered
-  headings). Replace them; don't build on them.
+- **Branch `redesign`** (this branch). The old al-folio theme is deleted. The first draft Rooj
+  rejected (big hero, pill buttons, card grid, numbered headings) was replaced on 20 Oct 2026 by the
+  **real site, built from layout G**: `index.html`, `photos/index.html`, `bookshelf/index.html`,
+  `404.html`, `assets/css/site.css`, self-hosted Source Serif 4 in `assets/fonts/` (OFL), and a
+  monochrome favicon. No JavaScript, no workflow. Photos are placeholders until Rooj sends them.
+  Checked at 390px and 1280px in light and dark: self-hosted font loads, no third-party requests,
+  no horizontal scroll, no console errors, all internal links resolve.
 - **Mockup**: a claude.ai Design canvas (private to Rooj):
   https://claude.ai/artifact/FVK9oM4JTpb43BF54LX2Mi. Its source is copied to `design/mockup/`:
   - `Main.dc.html` — direction **A · Paper** (has `dark` and `typeface` tweaks)
@@ -171,10 +174,10 @@ only their own rows narrow.
 
 1. ~~Rooj picks a direction~~ (done: G). Rooj sends photos with place and year, including the
    Bristol Blockchain Society ones.
-2. Rebuild `index.html`, `photos/index.html`, `bookshelf/index.html`, `404.html` and one stylesheet
-   with self-hosted fonts. Delete `.github/workflows/deploy.yml` and the old draft CSS/JS.
-3. Check it: screenshots at desktop and phone width in light and dark, no horizontal scroll, every
-   link resolves, valid HTML.
+2. ~~Rebuild the pages with one stylesheet and self-hosted fonts; delete the workflow and old
+   draft~~ (done 20 Oct 2026).
+3. ~~Check it~~ (done; see "Where things stand"). Re-check after the photos go in.
+3a. Swap the placeholders for Rooj's photos (README.md "Adding photos"), strip EXIF first.
 4. Add GoatCounter once Rooj has the code.
 5. Push, then merge to `master` (ask Rooj whether he wants a PR). Rooj sets Pages → Deploy from
    branch → `master` / root. Check the live site, then ask before deleting the `gh-pages` branch.

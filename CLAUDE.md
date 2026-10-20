@@ -21,8 +21,10 @@ Rooj Rinchokechai's personal site. Plain HTML + CSS served by GitHub Pages, no b
 - Plain HTML/CSS, no framework, no build step. Self-host the fonts (no Google Fonts request).
 - Never: icons, pill buttons, cards, hover lifts, hero sections, numbered headings, animation, sticky
   nav, a theme toggle. Dark mode follows the system setting.
-- The current `index.html`, `assets/` and `404.html` are a rejected first draft. Replace them; don't
-  build on them.
+- The site is built from layout G: `index.html`, `photos/index.html`, `bookshelf/index.html`,
+  `404.html` (absolute paths), one stylesheet `assets/css/site.css`, and the self-hosted font in
+  `assets/fonts/`. No JavaScript. Grey `class="ph"` blocks are photo placeholders; README.md says how
+  to swap in real photos.
 - Photos: strip all EXIF (including GPS) before committing.
 - The repo is public. Don't commit private notes or session transcripts.
 

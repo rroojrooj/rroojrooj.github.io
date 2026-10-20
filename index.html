@@ -1,173 +1,117 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rooj Rinchokechai</title>
-  <meta name="description" content="Rooj Rinchokechai — [your role] based in Bristol, UK.">
-  <link rel="canonical" href="https://rroojrooj.github.io/">
-
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Rooj Rinchokechai">
-  <meta property="og:description" content="[your role] based in Bristol, UK.">
-  <meta property="og:url" content="https://rroojrooj.github.io/">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@r_rooj">
-
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="assets/css/style.css">
-
-  <!-- Apply the saved theme before first paint so the page doesn't flash. -->
-  <script>
-    try {
-      var t = localStorage.getItem('theme');
-      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
-    } catch (e) {}
-  </script>
-  <script src="assets/js/main.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rooj Rinchokechai</title>
+<meta name="description" content="Rooj Rinchokechai, Bangkok. Building Belfort, an AI analyst for individual investors, and making high-protein gelato at Wim's Lab.">
+<link rel="canonical" href="https://rroojrooj.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rooj Rinchokechai">
+<meta property="og:description" content="Building Belfort, an AI analyst for individual investors, and making high-protein gelato at Wim's Lab.">
+<meta property="og:url" content="https://rroojrooj.github.io/">
+<meta name="theme-color" content="#FBF9F3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#161512" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/source-serif-4-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+<!--
+  Photos: each <div class="ph"> / <span class="ph"> is a placeholder. Replace it with an <img> of the
+  same shape, e.g.
+    <img src="assets/home/lead.jpg" alt="What the photo shows" width="1600" height="1067">
+  and for a small one:
+    <img class="thumb" src="assets/home/marathon.jpg" alt="..." width="184" height="184">
+  Strip EXIF (including GPS) before committing. See README.md.
+-->
+<main>
+<nav aria-label="Site"><span aria-current="page">Home</span><a href="photos/">Photos</a><a href="bookshelf/">Bookshelf</a></nav>
 
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="#top" aria-label="Back to top">rooj<span>.</span></a>
-      <nav aria-label="Sections">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
-        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-      </button>
-    </div>
-  </header>
+<header>
+<h1>Rooj Rinchokechai</h1>
+<p class="muted">Bangkok, Thailand</p>
+<p class="links"><a href="mailto:workwithrooj@gmail.com">workwithrooj@gmail.com</a><span class="dot" aria-hidden="true">·</span><a href="https://www.linkedin.com/in/roojrin">LinkedIn</a><span class="dot" aria-hidden="true">·</span><a href="https://github.com/rroojrooj">GitHub</a></p>
+</header>
 
-  <main id="main">
-    <section class="hero container" id="top">
-      <p class="eyebrow">Bristol, United Kingdom</p>
-      <h1>Rooj <em>Rinchokechai</em></h1>
-      <p class="lede">[Your role — e.g. software engineer] who [one line on what you build or care about].</p>
-      <p class="now"><span class="dot" aria-hidden="true"></span>Currently [what you're doing now — e.g. building X at Y].</p>
+<p class="intro">I'm building Belfort, an AI analyst for individual investors, and making high-protein gelato at Wim's Lab. Away from work, I run marathons, play too much golf and look after three giant tortoises.</p>
 
-      <ul class="social">
-        <li>
-          <a href="https://github.com/rroojrooj" rel="me">
-            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://x.com/r_rooj" rel="me">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
-            X
-          </a>
-        </li>
-        <li>
-          <!-- TODO: replace with your LinkedIn profile URL, or delete this item. -->
-          <a href="https://www.linkedin.com/" rel="me">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="#contact">
-            <svg class="stroke" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-            Email
-          </a>
-        </li>
-      </ul>
-    </section>
+<figure class="lead-photo">
+<div class="ph" role="img" aria-label="Photo to come" style="aspect-ratio: 3 / 2">One wide photo</div>
+<figcaption>[Place, year]</figcaption>
+</figure>
 
-    <section class="container section" id="about" aria-labelledby="about-title">
-      <h2 id="about-title"><span class="num">01</span>About</h2>
-      <div class="prose">
-        <p>[A short intro: who you are, what you do, and what you're interested in. Two or three sentences is plenty.]</p>
-        <p>[A bit more colour: how you got here, what you studied, what you enjoy outside work. Keep it in your own voice.]</p>
-      </div>
-    </section>
+<section aria-labelledby="now">
+<h2 id="now">Now</h2>
+<div class="now">
+<article>
+<p><strong>Belfort</strong> <span class="muted">· Founder · 2025–now</span></p>
+<p>An AI analyst for individual investors, from finding an idea to telling you, after every earnings report, whether your reasons for owning it still hold. Fund-grade research, priced for everyone.</p>
+<p class="meta"><a href="https://www.belfortagent.xyz">belfortagent.xyz</a><span aria-hidden="true">·</span><a href="https://x.com/BelfortResearch">@BelfortResearch</a></p>
+</article>
+<article>
+<span class="thumb"><span class="ph" role="img" aria-label="Photo to come: a gelato" style="aspect-ratio: 1 / 1">gelato</span></span>
+<p><strong>Wim's Lab</strong> <span class="muted">· Co-founder &amp; head chef · 2025–now</span></p>
+<p>Premium high-protein gelato. One of four co-founders; I create every flavour.</p>
+<p class="meta"><a href="https://www.instagram.com/wimslab_icecream/">Instagram</a></p>
+</article>
+</div>
+</section>
 
-    <section class="container section" id="experience" aria-labelledby="experience-title">
-      <h2 id="experience-title"><span class="num">02</span>Experience</h2>
-      <ol class="timeline">
-        <li>
-          <p class="when">[20XX] — Now</p>
-          <div>
-            <h3>[Role] <span class="at">· [Company]</span></h3>
-            <p>[One or two lines on what you work on and the impact you've had.]</p>
-          </div>
-        </li>
-        <li>
-          <p class="when">[20XX] — [20XX]</p>
-          <div>
-            <h3>[Role] <span class="at">· [Company]</span></h3>
-            <p>[What you did there.]</p>
-          </div>
-        </li>
-        <li>
-          <p class="when">[20XX] — [20XX]</p>
-          <div>
-            <h3>[Degree] <span class="at">· [University]</span></h3>
-            <p>[Focus, dissertation, or anything you're proud of.]</p>
-          </div>
-        </li>
-      </ol>
-    </section>
+<section aria-labelledby="outside">
+<h2 id="outside">Outside work</h2>
+<dl class="rows">
+<dt>Running</dt>
+<dd><span class="thumb"><span class="ph" role="img" aria-label="Photo to come: a marathon" style="aspect-ratio: 1 / 1">marathon</span></span>Marathons in Tokyo and Cape Town, 2026. Shorter races in Sydney, New York, Bath and Bristol.</dd>
+<dt>Golf</dt>
+<dd>Addicted enough to start building my own simulator, <a href="https://github.com/rroojrooj/Open-Birdie">Open-Birdie</a>.</dd>
+<dt>Also</dt>
+<dd>Bouldering, Olympic weightlifting, scuba diving.</dd>
+<dt>Music</dt>
+<dd>Guitar and vocals. Queen, the Beatles, Bob Dylan, John Mayer, Eric Clapton, B.B. King, Oasis, Taylor Swift.</dd>
+<dt>At home</dt>
+<dd><span class="thumb"><span class="ph" role="img" aria-label="Photo to come: the tortoises" style="aspect-ratio: 1 / 1">tortoises</span></span>A chocolate Labrador, a beagle and three Aldabra giant tortoises.</dd>
+<dt>On my mind</dt>
+<dd>Meaning, happiness and wealth, and how they fit together.</dd>
+<dt>Reading</dt>
+<dd><a href="bookshelf/">The bookshelf</a></dd>
+<dt>Photos</dt>
+<dd><a href="photos/">Pictures I've taken</a></dd>
+</dl>
+</section>
 
-    <section class="container section" id="projects" aria-labelledby="projects-title">
-      <h2 id="projects-title"><span class="num">03</span>Projects</h2>
-      <ul class="projects">
-        <li>
-          <a class="card" href="https://github.com/rroojrooj">
-            <h3>[Project name] <span class="arrow" aria-hidden="true">↗</span></h3>
-            <p>[What it is and why you built it, in a sentence or two.]</p>
-            <ul class="tags"><li>[Tech]</li><li>[Tech]</li></ul>
-          </a>
-        </li>
-        <li>
-          <a class="card" href="https://github.com/rroojrooj">
-            <h3>[Project name] <span class="arrow" aria-hidden="true">↗</span></h3>
-            <p>[What it is and why you built it, in a sentence or two.]</p>
-            <ul class="tags"><li>[Tech]</li><li>[Tech]</li></ul>
-          </a>
-        </li>
-        <li>
-          <a class="card" href="https://github.com/rroojrooj">
-            <h3>[Project name] <span class="arrow" aria-hidden="true">↗</span></h3>
-            <p>[What it is and why you built it, in a sentence or two.]</p>
-            <ul class="tags"><li>[Tech]</li><li>[Tech]</li></ul>
-          </a>
-        </li>
-        <li>
-          <a class="card" href="https://github.com/rroojrooj">
-            <h3>[Project name] <span class="arrow" aria-hidden="true">↗</span></h3>
-            <p>[What it is and why you built it, in a sentence or two.]</p>
-            <ul class="tags"><li>[Tech]</li><li>[Tech]</li></ul>
-          </a>
-        </li>
-      </ul>
-    </section>
+<section aria-labelledby="society">
+<h2 id="society">Bristol Blockchain Society</h2>
+<p class="society-line">I started it at university in 2022 and ran it for two years.</p>
+<figure>
+<div class="collage">
+<div class="big"><div class="ph" role="img" aria-label="Photo to come">The best society photo</div></div>
+<div class="ph" role="img" aria-label="Photo to come" style="aspect-ratio: 4 / 3">the team</div>
+<div class="ph" role="img" aria-label="Photo to come" style="aspect-ratio: 4 / 3">a talk</div>
+</div>
+<figcaption>Bristol, 2022–2024</figcaption>
+</figure>
+</section>
 
-    <section class="container section contact" id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title"><span class="num">04</span>Contact</h2>
-      <p class="prose">[A line inviting people to reach out — e.g. "I'm always happy to chat about X, Y or Z."]</p>
-      <!-- TODO: put your public email address in both places below. -->
-      <a class="big-link" href="mailto:hello@example.com">[your@email.com] <span aria-hidden="true">→</span></a>
-    </section>
-  </main>
+<section aria-label="More" class="more">
+<details>
+<summary>Other projects</summary>
+<div>
+<p><strong>Closed-loop DDoS detection</strong> <span class="muted">· 2025</span><br>Final-year group project at Bristol: ML detectors, simulated attacks and automated retraining. <span class="muted"><a href="https://github.com/rroojrooj/RP3-ML-DDoS-Detection-Final">code</a> · <a href="https://github.com/rroojrooj/RP3-ML-DDoS-Detection-Final/blob/main/paper-ML_DDoS_Detection.pdf">report</a></span></p>
+<p><strong>Bangkok childcare centres</strong> <span class="muted">· 2024</span><br>Put the records of 271 public childcare centres in one place for the city. <span class="muted"><a href="https://github.com/rroojrooj/BMA_ChildCenters">code</a></span></p>
+<p><strong>Fluid Options</strong> <span class="muted">· 2022</span><br>An options market where buyers stream premiums. Won Superfluid's Best DeFi Hack at ETHOnline. <span class="muted"><a href="https://ethglobal.com/showcase/fop-fluid-options-jjg01">showcase</a></span></p>
+</div>
+</details>
+<details>
+<summary>Background</summary>
+<p>BEng Computer Science and Electronics, University of Bristol (First Class, 2025). Before Belfort: SCB 10X, Token Unlocks, Kiatnakin Phatra, TISCO and the Bangkok Metropolitan Administration. More on <a href="https://www.linkedin.com/in/roojrin">LinkedIn</a>.</p>
+</details>
+</section>
 
-  <footer class="container">
-    <div class="site-footer">
-      <p>© 2026 Rooj Rinchokechai</p>
-      <a href="#top">Back to top ↑</a>
-    </div>
-  </footer>
+<footer>
+<p>Happy to hear from anyone working on AI, investing or good food.</p>
+<p>Last updated 20 October 2026</p>
+</footer>
+</main>
 </body>
 </html>
