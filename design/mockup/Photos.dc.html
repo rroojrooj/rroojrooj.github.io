@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rooj Rinchokechai — Photos</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#6E6B64}a:hover{color:#1C1B19}
+</style>
+</helmet>
+<div style="background: #FBF9F3; color: #1C1B19; font-family: 'Source Serif 4', Georgia, serif; font-size: 18px; line-height: 1.6; padding: 64px 20px 72px; box-sizing: border-box">
+<div style="max-width: 1040px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
+
+<nav aria-label="Site" style="display: flex; gap: 22px; font-size: 15px; color: #6E6B64">
+<a href="Main.dc.html" style="color: #6E6B64; text-decoration-line: underline; text-decoration-color: #BDB8AC; text-decoration-thickness: 1px; text-underline-offset: 3px">Home</a>
+<span style="color: #1C1B19">Photos</span>
+<a href="Bookshelf.dc.html" style="color: #6E6B64; text-decoration-line: underline; text-decoration-color: #BDB8AC; text-decoration-thickness: 1px; text-underline-offset: 3px">Bookshelf</a>
+</nav>
+
+<header style="max-width: 640px; display: flex; flex-direction: column; gap: 8px">
+<h1 style="margin: 0; font-size: 34px; line-height: 1.2; font-weight: 600; letter-spacing: -0.01em">Photos</h1>
+<p style="margin: 0">Pictures I've taken over the years, newest first. Select any photo to see it full size.</p>
+</header>
+
+<sc-for list="{{years}}" as="y" hint-placeholder-count="2">
+<section style="display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-size: 20px; line-height: 1.3; font-weight: 600; font-variant-numeric: tabular-nums">{{y.year}}</h2>
+<div style="column-width: 300px; column-gap: 20px">
+<sc-for list="{{y.photos}}" as="p" hint-placeholder-count="6">
+<figure style="margin: 0 0 22px; break-inside: avoid; display: inline-block; width: 100%">
+<div role="img" aria-label="Photo placeholder" style="aspect-ratio: {{p.ratio}}; width: 100%; background: #ECE8DE; display: flex; align-items: center; justify-content: center; color: #6E6B64; font-size: 14px">[photo]</div>
+<figcaption style="margin-top: 6px; font-size: 15px; color: #6E6B64">{{p.caption}}</figcaption>
+</figure>
+</sc-for>
+</div>
+</section>
+</sc-for>
+
+<footer style="max-width: 640px; padding-top: 18px; border-top: 1px solid #E5E1D6; font-size: 15px; color: #6E6B64">
+<p style="margin: 0">Last updated 20 October 2026</p>
+</footer>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":2200}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const ph = (ratio) => ({ ratio, caption: '[Place], [month]' });
+    return {
+      years: [
+        { year: '2026', photos: [ph('3 / 2'), ph('2 / 3'), ph('4 / 5'), ph('3 / 2'), ph('1 / 1')] },
+        { year: '2025', photos: [ph('2 / 3'), ph('3 / 2'), ph('3 / 2'), ph('4 / 5'), ph('3 / 2'), ph('2 / 3')] }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

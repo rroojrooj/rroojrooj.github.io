@@ -1,0 +1,22 @@
+{
+  "v": 3,
+  "createdOnFiles": { "v": 1, "at": "2026-10-20T06:46:12Z" },
+  "title": "Rooj — personal site mockup",
+  "launch": { "view": "canvas" },
+  "pages": [],
+  "boards": {
+    "Main.dc.html": { "x": 0, "y": 0, "w": 1280, "h": 1900, "title": "A · Paper — serif, one column", "expand": "fill", "is_interactive": true },
+    "VariantB.dc.html": { "x": 1360, "y": 0, "w": 1280, "h": 1700, "title": "B · Index — sans, labelled rows", "expand": "fill", "is_interactive": true },
+    "VariantC.dc.html": { "x": 2720, "y": 0, "w": 1280, "h": 1500, "title": "C · Letter — prose, no headings", "expand": "fill", "is_interactive": true },
+    "VariantD.dc.html": { "x": 4080, "y": 0, "w": 1280, "h": 1900, "title": "D · Photo-first — your photos lead", "expand": "fill", "is_interactive": true },
+    "Photos.dc.html": { "x": 0, "y": 2260, "w": 1280, "h": 2200, "title": "Photos", "expand": "fill", "is_interactive": true },
+    "Bookshelf.dc.html": { "x": 1360, "y": 2260, "w": 1280, "h": 2000, "title": "Bookshelf", "expand": "fill", "is_interactive": true },
+    "HomeMobile.dc.html": { "x": 2720, "y": 2260, "w": 390, "h": 3200, "title": "A on a phone, dark" }
+  },
+  "order": ["Main.dc.html", "VariantB.dc.html", "VariantC.dc.html", "VariantD.dc.html", "Photos.dc.html", "Bookshelf.dc.html", "HomeMobile.dc.html"],
+  "notes": {
+    "row1": { "x": 0, "y": -300, "text": "Home page — four directions, same content", "kind": "title1", "maxW": 5360 },
+    "row2": { "x": 0, "y": 1960, "text": "Other pages", "kind": "title1", "maxW": 3110 }
+  },
+  "designSystems": []
+}

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rooj Rinchokechai — A · Paper</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="background: {{c.bg}}; color: {{c.text}}; font-family: {{font}}; font-size: 18px; line-height: 1.6; padding: 64px 20px 72px; box-sizing: border-box">
+<div style="max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; gap: 52px">
+
+<nav aria-label="Site" style="display: flex; gap: 22px; font-size: 15px; color: {{c.muted}}">
+<span style="color: {{c.text}}">Home</span>
+<a href="Photos.dc.html" style="color: {{c.muted}}; text-decoration-line: underline; text-decoration-color: {{c.line}}; text-decoration-thickness: 1px; text-underline-offset: 3px">Photos</a>
+<a href="Bookshelf.dc.html" style="color: {{c.muted}}; text-decoration-line: underline; text-decoration-color: {{c.line}}; text-decoration-thickness: 1px; text-underline-offset: 3px">Bookshelf</a>
+</nav>
+
+<header style="display: flex; flex-direction: column; gap: 4px">
+<h1 style="margin: 0; font-size: 34px; line-height: 1.2; font-weight: 600; letter-spacing: -0.01em">Rooj Rinchokechai</h1>
+<p style="margin: 0; color: {{c.muted}}">Bangkok, Thailand</p>
+<p style="margin: 12px 0 0; display: flex; flex-wrap: wrap; column-gap: 10px; row-gap: 4px; font-size: 16px">
+<a href="mailto:workwithrooj@gmail.com" style="color: inherit; text-decoration-line: underline; text-decoration-color: {{c.line}}; text-decoration-thickness: 1px; text-underline-offset: 3px">workwithrooj@gmail.com</a>
+<span aria-hidden="true" style="color: {{c.muted}}">·</span>
+<a href="https://www.linkedin.com/in/roojrin" style="color: inherit; text-decoration-line: underline; text-decoration-color: {{c.line}}; text-decoration-thickness: 1px; text-underline-offset: 3px">LinkedIn</a>
+<span aria-hidden="true" style="color: {{c.muted}}">·</span>
+<a href="https://github.com/rroojrooj" style="color: inherit; text-decoration-line: underline; text-decoration-color: {{c.line}}; text-decoration-thickness: 1px; text-underline-offset: 3px">GitHub</a>
+</p>
+</header>
+
+<p style="margin: 0; font-size: 20px; line-height: 1.55">I'm building Belfort, an AI analyst for individual investors, and making high-protein gelato at Wim's Lab. Away from work, I run marathons, play too much golf and look after three giant tortoises.</p>
+
+<section aria-labelledby="now-h">
+<h2 id="now-h" style="margin: 0 0 18px; font-size: 20px; line-height: 1.3; font-weight: 600">Now</h2>
+<div style="display: flex; flex-direction: column; gap: 26px">
+<article style="display: flex; flex-direction: column; gap: 2px">
+<p style="margin: 0"><strong style="font-weight: 600">Belfort</strong> <span style="color: {{c.muted}}">· Founder · 2025–now</span></p>
+<p style="margin: 0">An AI analyst for individual investors — from finding an idea to telling you, after every earnings report, whether your reasons for owning it still hold. Fund-grade research, priced for everyone.</p>
+<p style="margin: 0; font-size: 16px; display: flex; gap: 10px; color: {{c.muted}}"><a href="https://www.belfortagent.xyz" style="color: {{c.muted}}; text-decoration-line: underline; text-decoration-color: {{c.line}}; text-decoration-thickness: 1px; text-underline-offset: 3px">belfortagent.xyz</a><span aria-hidden="true">·</span><a href="https://x.com/BelfortResearch" style="color: {{c.muted}}; text-decoration-line: underline; text-decoration-color: {{c.line}}; text-decoration-thickness: 1px; text-underline-offset: 3px">@BelfortResearch</a></p>
+</article>
+<article style="display: flex; flex-direction: column; gap: 2px">
+<p style="margin: 0"><strong style="font-weight: 600">Wim's Lab</strong> <span style="color: {{c.muted}}">· Co-founder &amp; head chef · 2025–now</span></p>
+<p style="margin: 0">Premium high-protein gelato. One of four co-founders; I create every flavour.</p>
+<p style="margin: 0; font-size: 16px"><a href="https://www.instagram.com/wimslab_icecream/" style="color: {{c.muted}}; text-decoration-line: underline; text-decoration-color: {{c.line}}; text-decoration-thickness: 1px; text-underline-offset: 3px">Instagram</a></p>
+</article>
+</div>
+</section>
+
+<section aria-labelledby="out-h">
+<h2 id="out-h" style="margin: 0 0 18px; font-size: 20px; line-height: 1.3; font-weight: 600">Outside work</h2>
+<div style="display: grid; grid-template-columns: 112px minmax(0, 1fr); column-gap: 20px; row-gap: 10px">
+<span style="color: {{c.muted}}">Running</span><span>Marathons in Tokyo and Cape Town.</span>
+<span style="color: {{c.muted}}">Golf</span><span>Addicted enough to start building my own simulator, <a href="https://github.com/rroojrooj/Open-Birdie" style="color: inherit; text-decoration-line: underline; text-decoration-color: {{c.line}}; text-decoration-thickness: 1px; text-underline-offset: 3px">Open-Birdie</a>.</span>
+<span style="color: {{c.muted}}">Also</span><span>Bouldering, Olympic weightlifting, scuba diving.</span>
+<span style="color: {{c.muted}}">Music</span><span>Guitar and vocals. Queen, the Beatles, Bob Dylan, John Mayer, Eric Clapton, B.B. King, Oasis, Taylor Swift.</span>
+<span style="color: {{c.muted}}">At home</span><span>A chocolate Labrador, a beagle and three Aldabra giant tortoises.</span>
+<span style="color: {{c.muted}}">On my mind</span><span>Meaning, happiness and wealth, and how they fit together.</span>
+<span style="color: {{c.muted}}">Reading</span><span><a href="Bookshelf.dc.html" style="color: inherit; text-decoration-line: underline; text-decoration-color: {{c.line}}; text-decoration-thickness: 1px; text-underline-offset: 3px">The bookshelf</a></span>
+<span style="color: {{c.muted}}">Photos</span><span><a href="Photos.dc.html" style="color: inherit; text-decoration-line: underline; text-decoration-color: {{c.line}}; text-decoration-thickness: 1px; text-underline-offset: 3px">Pictures I've taken</a></span>
+</div>
+</section>
+
+<section aria-label="More" style="display: flex; flex-direction: column; gap: 12px; font-size: 17px">
+<details>
+<summary style="cursor: pointer; color: {{c.muted}}">Other projects</summary>
+<div style="display: flex; flex-direction: column; gap: 14px; margin: 14px 0 6px 18px">
+<p style="margin: 0"><strong style="font-weight: 600">Closed-loop DDoS detection</strong> <span style="color: {{c.muted}}">· 2025</span><br>Final-year group project at Bristol: ML detectors, simulated attacks and automated retraining. <a href="https://github.com/rroojrooj/RP3-ML-DDoS-Detection-Final" style="color: {{c.muted}}; text-decoration-line: underline; text-decoration-color: {{c.line}}; text-decoration-thickness: 1px; text-underline-offset: 3px">code</a> · <a href="https://github.com/rroojrooj/RP3-ML-DDoS-Detection-Final/blob/main/paper-ML_DDoS_Detection.pdf" style="color: {{c.muted}}; text-decoration-line: underline; text-decoration-color: {{c.line}}; text-decoration-thickness: 1px; text-underline-offset: 3px">report</a></p>
+<p style="margin: 0"><strong style="font-weight: 600">Bangkok childcare centres</strong> <span style="color: {{c.muted}}">· 2024</span><br>Put the records of 271 public childcare centres in one place for the city. <a href="https://github.com/rroojrooj/BMA_ChildCenters" style="color: {{c.muted}}; text-decoration-line: underline; text-decoration-color: {{c.line}}; text-decoration-thickness: 1px; text-underline-offset: 3px">code</a></p>
+<p style="margin: 0"><strong style="font-weight: 600">Fluid Options</strong> <span style="color: {{c.muted}}">· 2022</span><br>An options market where buyers stream premiums. Won Superfluid's Best DeFi Hack at ETHOnline. <a href="https://ethglobal.com/showcase/fop-fluid-options-jjg01" style="color: {{c.muted}}; text-decoration-line: underline; text-decoration-color: {{c.line}}; text-decoration-thickness: 1px; text-underline-offset: 3px">showcase</a></p>
+</div>
+</details>
+<details>
+<summary style="cursor: pointer; color: {{c.muted}}">Background</summary>
+<p style="margin: 14px 0 6px 18px">BEng Computer Science and Electronics, University of Bristol (First Class, 2025). Founded the Bristol Blockchain Society. Before Belfort: SCB 10X, Token Unlocks, Kiatnakin Phatra, TISCO and the Bangkok Metropolitan Administration. More on <a href="https://www.linkedin.com/in/roojrin" style="color: inherit; text-decoration-line: underline; text-decoration-color: {{c.line}}; text-decoration-thickness: 1px; text-underline-offset: 3px">LinkedIn</a>.</p>
+</details>
+</section>
+
+<footer style="padding-top: 18px; border-top: 1px solid {{c.rule}}; font-size: 15px; color: {{c.muted}}; display: flex; flex-direction: column; gap: 2px">
+<p style="margin: 0">Happy to hear from anyone working on AI, investing or good food.</p>
+<p style="margin: 0">Last updated 20 October 2026</p>
+</footer>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"dark":{"editor":"boolean","default":false,"section":"Theme"},"typeface":{"editor":"enum","options":["Source Serif 4","EB Garamond","Newsreader"],"default":"Source Serif 4","section":"Theme"},"$preview":{"width":1280,"height":1900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const dark = this.props.dark ?? false;
+    const stacks = {
+      'Source Serif 4': "'Source Serif 4', Georgia, serif",
+      'EB Garamond': "'EB Garamond', Georgia, serif",
+      'Newsreader': "'Newsreader', Georgia, serif"
+    };
+    const font = stacks[this.props.typeface ?? 'Source Serif 4'] || stacks['Source Serif 4'];
+    const c = dark
+      ? { bg: '#161512', text: '#E8E5DC', muted: '#9A968C', rule: '#2E2C27', line: '#5A574F' }
+      : { bg: '#FBF9F3', text: '#1C1B19', muted: '#6E6B64', rule: '#E5E1D6', line: '#BDB8AC' };
+    return { c, font };
+  }
+}
+</script>
+</body>
+</html>
