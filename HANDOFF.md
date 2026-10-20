@@ -10,7 +10,12 @@ truth for picking the work back up.
   **real site, built from layout G**, in **`docs/`**: `index.html`, `photos/index.html`,
   `bookshelf/index.html`, `404.html`, `assets/css/site.css`, self-hosted Source Serif 4 in
   `assets/fonts/` (OFL), and a monochrome favicon. No JavaScript, no workflow. Photos are
-  placeholders until Rooj sends them. Design tokens and rules are in `DESIGN.md`.
+  placeholders until Rooj sends them, and empty photo slots are hidden by CSS on the live site
+  (they appear as soon as a real `<img>` replaces the placeholder). Design tokens and rules are in
+  `DESIGN.md`.
+- **Live since 20 Oct 2026**: `redesign` was fast-forwarded into `master` and GitHub Pages switched to
+  `master` → `/docs`. Pushing to `master` now publishes. Keep working on `redesign` (or a branch)
+  and merge when ready. The old `gh-pages` branch still exists; ask Rooj before deleting it.
   Checked at 390px and 1280px in light and dark: self-hosted font loads, no third-party requests,
   no horizontal scroll, no console errors, all internal links resolve.
 - **Mockup**: a claude.ai Design canvas (private to Rooj):
@@ -195,8 +200,9 @@ only their own rows narrow.
 3. ~~Check it~~ (done; see "Where things stand"). Re-check after the photos go in.
 3a. Swap the placeholders for Rooj's photos (README.md "Adding photos"), strip EXIF first.
 4. Add GoatCounter once Rooj has the code.
-5. Push, then merge to `master` (ask Rooj whether to use a PR). Rooj sets Pages → Deploy from
-   branch → `master` → `/docs`. Check the live site, then ask before deleting the `gh-pages` branch.
+5. ~~Merge to `master` and set Pages → `master` → `/docs`~~ (done 20 Oct 2026, fast-forward, at
+   Rooj's request). After each later change: merge to `master`, check the live site. Ask before
+   deleting the old `gh-pages` branch.
 
 ## Reference
 

@@ -15,7 +15,10 @@ The website is everything in `docs/`. The rest of the repo (`HANDOFF.md`, `CLAUD
   visitor's system setting.
 - `docs/assets/fonts/`: Source Serif 4 (variable, Latin subset), self-hosted, with its licence (`OFL.txt`).
 
-Search for `[` or `class="ph"` to find placeholders still to fill in.
+Search for `[` or `class="ph"` to find placeholders still to fill in. Empty photo slots are hidden
+on the live site by one CSS rule (`figure:has(.ph)` etc. in `site.css`): a slot appears as soon as
+its placeholder is replaced with an `<img>`. A collage, or a year on the Photos page, appears once
+all its placeholders are replaced.
 
 ## Adding photos
 

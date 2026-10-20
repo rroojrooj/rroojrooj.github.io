@@ -156,6 +156,12 @@ details > div { display: flex; flex-direction: column; gap: 14px; }
 .shelf h2 { margin-bottom: 8px; font-size: 15px; font-weight: 400; color: var(--muted); }
 .shelf li + li { margin-top: 4px; }
 
+/* ---------- Photos not added yet ---------- */
+
+/* A photo slot that still holds its placeholder is hidden on the live site. Replacing the .ph block
+   with an <img> shows it; a group (collage, year) appears once all its placeholders are replaced. */
+figure:has(.ph), .thumb:has(.ph), .year:not(:has(img)) { display: none; }
+
 /* ---------- Small screens ---------- */
 
 @media (max-width: 520px) {
