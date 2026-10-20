@@ -77,14 +77,29 @@ non-CV side as the main section → everything else folded away.
    gelato at Wim's Lab. Away from work, I run marathons, play too much golf and look after three
    giant tortoises." Then the wide photo (layout G).
 3. **Now**
-   - **Belfort** · Founder · 2025–now — "An AI analyst for individual investors — from finding an
-     idea to telling you, after every earnings report, whether your reasons for owning it still hold.
-     Fund-grade research, priced for everyone." Links: [belfortagent.xyz](https://www.belfortagent.xyz) ·
+   - **Belfort** · Founder · 2025–now — "I believe investing can be far easier and more effective than
+     it is today." Links: [belfortagent.xyz](https://www.belfortagent.xyz) ·
      [@BelfortResearch](https://x.com/BelfortResearch)
-     (Context: Belfort aims to do a personal fund analyst's whole job: idea discovery and memos
-     before buying, a live valuation and price alerts while holding, supplier, customer and competitor
-     news, pre- and post-earnings briefs, and tracking whether management delivers. Don't paste this
-     onto the site; it's background for the copy.)
+     Below it, a closed **"Why I'm building it"** dropdown: three short first-person paragraphs that
+     read as one story. The work is slow (6+ years as a fundamental investor; ideas, research,
+     deciding and keeping up all take too much time and effort), institutions have the technology and
+     teams while individuals usually don't (they deserve the same level of intelligence), and that's
+     why Belfort exists (institution-level support for anyone who invests seriously, without the price).
+     **Rooj's core message, in Rooj's words:** the investing journey can be easier, more efficient and
+     more effective; retail investors should get the same technology and intelligence as institutions,
+     at a lower price. Write from that. Notes on this copy: plain, easy sentences that connect; don't
+     invent habits or details Rooj didn't give; **never "my dream" / "the dream"**.
+     **Rule from Rooj: this is a personal page, not the product page.** Belfort copy here is about
+     Rooj's goal, vision and mission, never feature lists or how it works. (A feature-row version was
+     tried and rejected on 20 Oct 2026.)
+     (Rewritten 20 Oct 2026: the old line repeated the intro's "AI analyst for individual investors".
+     Rooj's positioning, as background only: every investing tool waits to be asked; Belfort knows the
+     investor (holdings, style, themes, reasons for owning), works before being asked from primary
+     sources, remembers what each company said across years, and backs every claim with its source,
+     saying so when it can't prove something. Longer term it aims to do a personal fund analyst's
+     whole job: ideas and memos before buying, live valuation, price alerts and supply-chain news
+     while holding, pre- and post-earnings briefs, and tracking whether management delivers. Don't
+     paste this onto the site.)
    - **Wim's Lab** · Co-founder & head chef · 2025–now — "Premium high-protein gelato. One of four
      co-founders; I create every flavour." Link: [Instagram](https://www.instagram.com/wimslab_icecream/)
 4. **Outside work** (label → line)

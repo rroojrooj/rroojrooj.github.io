@@ -156,6 +156,9 @@ Square corners everywhere, photos included. Nothing on the page is a pill, a car
 - **Nav:** three plain words at the top of every page; the current page is the text colour and not a
   link; the others are muted links.
 - **Dropdowns (`details`):** "Other projects" and "Background", closed by default, muted summary.
+  The same pattern holds read-more detail inside an entry: Belfort's "Why I'm building it" sits
+  under its one-line summary as a few short first-person paragraphs, indented on desktop and flush
+  on phones.
 - **Photos:** an `img` replaces each placeholder at the same aspect ratio. Captions read
   "Place, year" (home) or "Place, Month Year" (Photos page). EXIF, including GPS, is stripped first.
 - **Footer:** one optional line of invitation, then "Last updated …".
@@ -172,6 +175,9 @@ Square corners everywhere, photos included. Nothing on the page is a pill, a car
 - Don't add JavaScript, a build step or a framework.
 - Don't use colour for emphasis or add an accent colour.
 - Don't put CV material (job lists, dates, bootcamp stats) on the page; it lives on LinkedIn.
+- Don't turn project entries into product pages: no feature lists or how-it-works. Write about the
+  goal and the belief, in the first person, in short plain sentences that lead into each other.
+  Never "my dream" or "the dream".
 
 ## Motion
 
@@ -187,3 +193,4 @@ Square corners everywhere, photos included. Nothing on the page is a pill, a car
 | 2026-10-20 | No portrait of Rooj | Shown as variant D, not picked; earlier decision "no photo, for now" |
 | 2026-10-20 | Self-host Source Serif 4 (opsz + wght, Latin, roman only) | No Google request; optical sizing matches the approved mockup; no italics used |
 | 2026-10-20 | Publish `docs/` only | Keeps HANDOFF.md, CLAUDE.md and design material off the public website |
+| 2026-10-20 | Belfort: a one-line belief plus a closed "Why I'm building it" dropdown (the work is slow, institutions have what individuals lack, so Belfort) | Built from Rooj's own words: investing can be easier, more efficient and more effective; individuals deserve institution-level intelligence at a lower price. Rejected along the way: feature rows ("not the product page"), a hard-to-read draft using "dream", and invented details |

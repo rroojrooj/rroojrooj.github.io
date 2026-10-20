@@ -120,6 +120,9 @@ figcaption { margin-top: 6px; font-size: 14px; color: var(--muted); line-height:
 .now article { display: flow-root; }
 .now article p + p { margin-top: 2px; }
 .now .meta { font-size: 16px; display: flex; gap: 10px; color: var(--muted); }
+.now details { margin: 6px 0 4px; }
+.now summary { font-size: 16px; }
+.now details > div { margin: 12px 0 10px 18px; font-size: 17px; gap: 10px; }
 
 .rows { display: grid; grid-template-columns: 112px minmax(0, 1fr); column-gap: 20px; row-gap: 10px; }
 .rows > dt { color: var(--muted); }
@@ -161,4 +164,5 @@ details > div { display: flex; flex-direction: column; gap: 14px; }
   .intro { font-size: 19px; }
   .rows { grid-template-columns: 88px minmax(0, 1fr); column-gap: 14px; }
   .thumb { width: 64px; margin-left: 12px; }
+  .now details > div { margin-left: 0; }
 }
