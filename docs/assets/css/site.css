@@ -144,11 +144,19 @@ details > div { display: flex; flex-direction: column; gap: 14px; }
 /* ---------- Photos ---------- */
 
 .page-intro { display: flex; flex-direction: column; gap: 8px; }
-.year { display: flex; flex-direction: column; gap: 16px; }
+.year { display: flex; flex-direction: column; gap: 18px; }
 .year h2 { margin: 0; font-variant-numeric: tabular-nums; }
-.gallery { column-width: 300px; column-gap: 20px; }
-.gallery figure { margin: 0 0 22px; break-inside: avoid; }
-.gallery a { text-decoration: none; display: block; }
+.year h3 { margin: 18px 0 0; font-size: 16px; font-weight: 400; color: var(--muted); }
+
+/* Photos come in sets: one race or one place, captioned once. The page is 12 columns; a set takes
+   --span of them and each photo inside takes --s, so sizes vary on purpose and bottoms stay uneven. */
+.sets { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 14px; row-gap: 44px; align-items: start; }
+.set { grid-column: span var(--span, 12); display: grid; grid-template-columns: repeat(var(--span, 12), minmax(0, 1fr)); gap: 14px; align-items: start; margin: 0; }
+.set > a, .set > figure { grid-column: span var(--s, 4); display: block; margin: 0; }
+.set a { text-decoration: none; display: block; }
+.set > figcaption { grid-column: 1 / -1; margin-top: -6px; font-size: 15px; color: var(--text); }
+.set > figcaption.beside { grid-column: span var(--s); margin-top: 0; align-self: end; }
+.set .note { display: block; margin-top: 4px; font-size: 14px; color: var(--muted); }
 
 /* ---------- Bookshelf ---------- */
 
@@ -189,4 +197,10 @@ figure:has(.ph), .thumb:has(.ph), .year:not(:has(img)) { display: none; }
   .rows { grid-template-columns: 88px minmax(0, 1fr); column-gap: 14px; }
   .thumb { width: 64px; margin-left: 12px; }
   .now details > div { margin-left: 0; }
+  /* Phones: sets stack; photos pair up two by two, and a set's lead photo takes the full width. */
+  .sets { grid-template-columns: minmax(0, 1fr); row-gap: 36px; }
+  .set { grid-column: 1 / -1; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .set > a, .set > figure { grid-column: span 1; }
+  .set > .lead, .set > figcaption, .set > figcaption.beside { grid-column: 1 / -1; }
+  .set > figcaption.beside { margin-top: -2px; align-self: start; }
 }
