@@ -163,13 +163,15 @@ Square corners everywhere, photos included. Nothing on the page is a pill, a car
   hidden (`figure:has(.ph)`, `.thumb:has(.ph)`, `.year:not(:has(img))`), so the live page never
   shows draft boxes. Captions read "Place, Year" on both pages: short, no month (Rooj's choice,
   25 Oct 2026). EXIF, including GPS, is stripped first.
-- **Photos page sets (26 Oct 2026):** photos are grouped into sets, one per race or place, with
-  one caption per set (never repeated under each photo) and an optional short note. The caption
-  sits above its photos as the set's title. A set is a stack of rows; every photo in a row shares
-  one height (it grows by its aspect ratio), so rows never leave holes, and sizes vary with how
-  many photos share a row. Sets sit 48px apart, photos inside a set 10px. Places by year come
-  first, newest first, with the year as the heading (so place captions drop the year); Running
-  (races, then training runs) comes last. On phones photos pair up two by two.
+- **Photos page gallery (26 Oct 2026):** Rooj wants the screen full of photos with no wasted
+  space. The page widens to 1680px and is a packed gallery: every row ("band") runs the full
+  width and every photo in a band shares one height, so there is no blank space beside or under
+  photos. Photos are grouped by place or race, captioned once underneath (place or race, then the
+  year, and the time for races, in muted text) with an optional short note. A place too wide for
+  one band continues on bands of its own; a continued place never shares a band with another.
+  Years run newest first (the order of places inside a year is chosen so bands pack well);
+  Running comes last. No intro sentence: the title and the year links are enough. On phones,
+  groups stack and their photos wrap into rows that still share a height.
 - **Footer:** one optional line of invitation, then "Last updated …".
 
 ## Do's and Don'ts

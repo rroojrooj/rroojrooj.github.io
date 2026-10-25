@@ -148,27 +148,23 @@ details > div { display: flex; flex-direction: column; gap: 14px; }
 /* Jump links to each year and to Running: the page is long, so say what's on it up front.
    Spacing alone separates them (they're underlined), so nothing dangles when the line wraps. */
 .jump { display: flex; flex-wrap: wrap; column-gap: 18px; row-gap: 6px; font-size: 16px; }
-.year { display: flex; flex-direction: column; gap: 18px; }
-/* A new year (or Running) gets about twice the space that separates two sets inside it. */
-main > .year + .year { margin-top: 40px; }
-.year h2 { margin: 0; font-variant-numeric: tabular-nums; }
-.year h3 { margin: 18px 0 0; font-size: 16px; font-weight: 400; color: var(--muted); }
 
-/* Photos come in sets: one race or one place, captioned once. A set is a stack of rows, and every
-   photo in a row gets the same height (each grows by its aspect ratio, --ar), so rows never leave
-   holes. Sizes vary with how many photos share a row, how wide the row is (--rw) and the set (--w).
-   Sets sit apart from each other (48px) far more than photos inside a set (10px). */
-.sets { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 48px; }
-.set { flex: 0 0 var(--w, 100%); max-width: var(--w, 100%); margin: 0; display: flex; flex-direction: column; gap: 10px; }
-.row { display: flex; gap: 10px; width: var(--rw, 100%); }
-/* Scaled by 1000: grow factors that add up to less than 1 would leave a lone portrait short. */
-.row > a, .row > figure { flex: calc(var(--ar) * 1000) 1 0; min-width: 0; margin: 0; }
-.set a { display: block; text-decoration: none; }
-/* The caption titles its set from above, so the label opens the group instead of trailing it. */
-.set > figcaption { margin: 0 0 2px; font-size: 15px; color: var(--text); }
-/* No left margin: when a narrow set wraps the caption, the year and time start flush on line two. */
-.set .meta { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
-.set .note { display: block; margin-top: 2px; font-size: 14px; color: var(--muted); }
+/* The gallery fills the window: rows ("bands") always run the full width, and every photo in a
+   band shares one height. A band holds one or more groups (one place or race, captioned once
+   underneath). Each group grows by the sum of its photos' aspect ratios (--sum) on top of its own
+   inner gaps (--gaps), and each photo grows by its aspect ratio (--ar), so heights match across
+   the whole band. Grow factors are scaled by 1000 so a lone portrait still fills its share. */
+main.photos-page { max-width: 1680px; }
+.gallery { display: flex; flex-direction: column; gap: 28px; }
+.gallery h2 { margin: 28px 0 0; }
+.band { display: flex; gap: 24px; align-items: flex-start; }
+.group { flex: calc(var(--sum) * 1000) 1 var(--gaps); min-width: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.photos { display: flex; gap: 6px; }
+.photos > a { flex: calc(var(--ar) * 1000) 1 0; min-width: 0; display: block; text-decoration: none; }
+.group > figcaption { margin: 0; font-size: 15px; color: var(--text); }
+/* No left margin: when a narrow group wraps its caption, the year and time start flush. */
+.group .meta { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.group .note { display: block; margin-top: 2px; font-size: 14px; color: var(--muted); }
 
 /* ---------- Bookshelf ---------- */
 
@@ -209,11 +205,10 @@ figure:has(.ph), .thumb:has(.ph), .year:not(:has(img)) { display: none; }
   .rows { grid-template-columns: 88px minmax(0, 1fr); column-gap: 14px; }
   .thumb { width: 64px; margin-left: 12px; }
   .now details > div { margin-left: 0; }
-  /* Phones: sets stack full width; photos pair up two by two, and a photo left alone in its
-     pair (the third of three, or a set's only photo) takes the full width. */
-  .sets { gap: 36px; }
-  main > .year + .year { margin-top: 32px; }
-  .set { flex-basis: 100%; max-width: 100%; gap: 8px; }
-  .row { width: 100%; flex-wrap: wrap; gap: 8px; }
-  .row > a, .row > figure { flex: 1 1 calc(50% - 4px); }
+  /* Phones: groups stack full width and their photos wrap into rows that still share a height
+     (basis and growth both follow the aspect ratio): portraits pair up, landscapes go full width. */
+  .band { flex-direction: column; gap: 28px; }
+  .group { flex: none; width: 100%; }
+  .photos { flex-wrap: wrap; }
+  .photos > a { flex: calc(var(--ar) * 1000) 1 calc(var(--ar) * 170px); }
 }
