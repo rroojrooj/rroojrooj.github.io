@@ -161,8 +161,8 @@ Square corners everywhere, photos included. Nothing on the page is a pill, a car
   on phones.
 - **Photos:** an `img` replaces each placeholder at the same aspect ratio. Until then the slot is
   hidden (`figure:has(.ph)`, `.thumb:has(.ph)`, `.year:not(:has(img))`), so the live page never
-  shows draft boxes. Captions read
-  "Place, year" (home) or "Place, Month Year" (Photos page). EXIF, including GPS, is stripped first.
+  shows draft boxes. Captions read "Place, Year" on both pages: short, no month (Rooj's choice,
+  25 Oct 2026). EXIF, including GPS, is stripped first.
 - **Footer:** one optional line of invitation, then "Last updated …".
 
 ## Do's and Don'ts

@@ -185,7 +185,7 @@ only their own rows narrow.
 ## Photos page plan
 
 - Files at `photos/<year>/<slug>.jpg`. Resize to about 2000px on the long edge, plus a roughly 800px
-  thumbnail. **Strip all EXIF, including GPS location.** Captions read "Place, Month Year". Newest
+  thumbnail. **Strip all EXIF, including GPS location.** Captions read "Place, Year". Newest
   year first; each image links to the full-size file. No JS lightbox.
 - Adding a photo = drop in the file and add one `<figure>` line. Document the steps in the README. A
   small local helper script (resize + strip EXIF) is fine as long as the site itself stays build-free.
@@ -198,6 +198,10 @@ only their own rows narrow.
    draft~~ (done 20 Oct 2026).
 3. ~~Check it~~ (done; see "Where things stand"). Re-check after the photos go in.
 3a. Swap the placeholders for Rooj's photos (README.md "Adding photos"), strip EXIF first.
+    Done 25 Oct 2026: the home wide photo (Koh Panyee pitch, also the link-preview image) and 18
+    film photos on the Photos page (2019, 2020, 2022, 2025), picked by Rooj from Rooj's own film scans.
+    Years come from the lab scan dates; captions are "Place, Year". Still to come: the three home
+    thumbs (gelato, marathon, tortoises) and the Bristol Blockchain Society collage.
 4. Add GoatCounter once Rooj has the code.
 5. ~~Merge to `master` and set Pages → `master` → `/docs`~~ (done 20 Oct 2026, fast-forward, at
    Rooj's request). After each later change: merge to `master`, check the live site.

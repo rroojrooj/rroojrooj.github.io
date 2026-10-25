@@ -17,9 +17,8 @@
   Adding a photo (see README.md):
   1. Put the full-size file at photos/<year>/<slug>.jpg (about 2000px on the long edge) and the
      thumbnail at photos/<year>/<slug>-800.jpg (about 800px). Strip all EXIF, including GPS.
-  2. Add one line inside that year's gallery, newest first:
-     <figure><a href="2026/slug.jpg"><img src="2026/slug-800.jpg" alt="What it shows" width="800" height="533" loading="lazy"></a><figcaption>Place, Month Year</figcaption></figure>
-  3. Delete the placeholder figures once real ones are in.
+  2. Add one line inside that year's gallery, newest first (copy a year's <section> for a new year):
+     <figure><a href="2026/slug.jpg"><img src="2026/slug-800.jpg" alt="What it shows" width="800" height="533" loading="lazy"></a><figcaption>Place, Year</figcaption></figure>
 -->
 <main class="wide">
 <nav aria-label="Site"><a href="../">Home</a><span aria-current="page">Photos</span><a href="../bookshelf/">Bookshelf</a></nav>
@@ -29,26 +28,50 @@
 <p>Pictures I've taken over the years, newest first. Select one to see it full size.</p>
 </header>
 
-<section class="year" aria-labelledby="y2026">
-<h2 id="y2026">2026</h2>
-<div class="gallery">
-<figure><div class="ph" role="img" aria-label="Photo to come" style="aspect-ratio: 3 / 2">photo</div><figcaption>[Place, Month 2026]</figcaption></figure>
-<figure><div class="ph" role="img" aria-label="Photo to come" style="aspect-ratio: 2 / 3">photo</div><figcaption>[Place, Month 2026]</figcaption></figure>
-<figure><div class="ph" role="img" aria-label="Photo to come" style="aspect-ratio: 4 / 5">photo</div><figcaption>[Place, Month 2026]</figcaption></figure>
-</div>
-</section>
-
 <section class="year" aria-labelledby="y2025">
 <h2 id="y2025">2025</h2>
 <div class="gallery">
-<figure><div class="ph" role="img" aria-label="Photo to come" style="aspect-ratio: 2 / 3">photo</div><figcaption>[Place, Month 2025]</figcaption></figure>
-<figure><div class="ph" role="img" aria-label="Photo to come" style="aspect-ratio: 3 / 2">photo</div><figcaption>[Place, Month 2025]</figcaption></figure>
-<figure><div class="ph" role="img" aria-label="Photo to come" style="aspect-ratio: 3 / 2">photo</div><figcaption>[Place, Month 2025]</figcaption></figure>
+<figure><a href="2025/koh-tao-beach.jpg"><img src="2025/koh-tao-beach-800.jpg" alt="A beach seen from under a tree, people in deckchairs, the sea beyond" width="800" height="530" loading="lazy"></a><figcaption>Koh Tao, 2025</figcaption></figure>
+<figure><a href="2025/wembley.jpg"><img src="2025/wembley-800.jpg" alt="A full Wembley Stadium during the Carabao Cup final" width="800" height="530" loading="lazy"></a><figcaption>Wembley, 2025</figcaption></figure>
+</div>
+</section>
+
+<section class="year" aria-labelledby="y2022">
+<h2 id="y2022">2022</h2>
+<div class="gallery">
+<figure><a href="2022/koh-panyee-pitch.jpg"><img src="2022/koh-panyee-pitch-800.jpg" alt="The floating football pitch at Koh Panyee, a person walking across it, in black and white" width="800" height="530" loading="lazy"></a><figcaption>Koh Panyee, 2022</figcaption></figure>
+<figure><a href="2022/koh-panyee.jpg"><img src="2022/koh-panyee-800.jpg" alt="Evening light on a limestone island beside the Koh Panyee stilt village" width="800" height="530" loading="lazy"></a><figcaption>Koh Panyee, 2022</figcaption></figure>
+<figure><a href="2022/phang-nga-bay.jpg"><img src="2022/phang-nga-bay-800.jpg" alt="Limestone islands in silhouette over the water at dusk" width="800" height="530" loading="lazy"></a><figcaption>Phang Nga Bay, 2022</figcaption></figure>
+</div>
+</section>
+
+<section class="year" aria-labelledby="y2020">
+<h2 id="y2020">2020</h2>
+<div class="gallery">
+<figure><a href="2020/kanchanaburi-river.jpg"><img src="2020/kanchanaburi-river-800.jpg" alt="A wide river reflecting white clouds, hills in the distance" width="800" height="542" loading="lazy"></a><figcaption>Kanchanaburi, 2020</figcaption></figure>
+</div>
+</section>
+
+<section class="year" aria-labelledby="y2019">
+<h2 id="y2019">2019</h2>
+<div class="gallery">
+<figure><a href="2019/stockholm-sunset.jpg"><img src="2019/stockholm-sunset-800.jpg" alt="A pink and violet sunset over dark rooftops" width="800" height="543" loading="lazy"></a><figcaption>Stockholm, 2019</figcaption></figure>
+<figure><a href="2019/stockholm-ferry.jpg"><img src="2019/stockholm-ferry-800.jpg" alt="A pink sunset over calm water and a low line of islands" width="800" height="543" loading="lazy"></a><figcaption>Stockholm, 2019</figcaption></figure>
+<figure><a href="2019/helsinki-harbour.jpg"><img src="2019/helsinki-harbour-800.jpg" alt="Helsinki harbour with a Ferris wheel and a large ferry" width="800" height="543" loading="lazy"></a><figcaption>Helsinki, 2019</figcaption></figure>
+<figure><a href="2019/copenhagen-dusk.jpg"><img src="2019/copenhagen-dusk-800.jpg" alt="Copenhagen's skyline and a canal at dusk, in black and white" width="800" height="543" loading="lazy"></a><figcaption>Copenhagen, 2019</figcaption></figure>
+<figure><a href="2019/nyhavn.jpg"><img src="2019/nyhavn-800.jpg" alt="Colourful houses and old wooden boats along Nyhavn" width="800" height="543" loading="lazy"></a><figcaption>Copenhagen, 2019</figcaption></figure>
+<figure><a href="2019/nyhavn-skagen.jpg"><img src="2019/nyhavn-skagen-800.jpg" alt="Yellow and white houses on Nyhavn in low winter light" width="800" height="543" loading="lazy"></a><figcaption>Copenhagen, 2019</figcaption></figure>
+<figure><a href="2019/nyhavn-bw.jpg"><img src="2019/nyhavn-bw-800.jpg" alt="Nyhavn's houses and moored sailing boats, in black and white" width="800" height="543" loading="lazy"></a><figcaption>Copenhagen, 2019</figcaption></figure>
+<figure><a href="2019/bangkok-river.jpg"><img src="2019/bangkok-river-800.jpg" alt="The Chao Phraya at sunset, flags on a pier and a bridge in the distance" width="800" height="542" loading="lazy"></a><figcaption>Bangkok, 2019</figcaption></figure>
+<figure><a href="2019/sapporo-yodobashi.jpg"><img src="2019/sapporo-yodobashi-800.jpg" alt="Two taxis waiting outside the lit-up Yodobashi Camera store at night" width="800" height="543" loading="lazy"></a><figcaption>Sapporo, 2019</figcaption></figure>
+<figure><a href="2019/sapporo-night.jpg"><img src="2019/sapporo-night-800.jpg" alt="A city street at night with streaks of car lights" width="800" height="543" loading="lazy"></a><figcaption>Sapporo, 2019</figcaption></figure>
+<figure><a href="2019/hokkaido-lake.jpg"><img src="2019/hokkaido-lake-800.jpg" alt="A lake between dark mountains, the sun breaking through cloud" width="800" height="543" loading="lazy"></a><figcaption>Hokkaido, 2019</figcaption></figure>
+<figure><a href="2019/biei-road.jpg"><img src="2019/biei-road-800.jpg" alt="A straight road running down between fields towards blue hills" width="800" height="543" loading="lazy"></a><figcaption>Biei, 2019</figcaption></figure>
 </div>
 </section>
 
 <footer class="narrow">
-<p>Last updated 20 October 2026</p>
+<p>Last updated 25 October 2026</p>
 </footer>
 </main>
 </body>

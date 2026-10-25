@@ -26,7 +26,7 @@ all its placeholders are replaced.
 2. Resize to about 2000px on the long edge. For the Photos page, also make an 800px thumbnail.
 3. **Photos page:** save as `docs/photos/<year>/<slug>.jpg` and `docs/photos/<year>/<slug>-800.jpg`,
    then add one line to that year's gallery (newest first). The exact line is in the comment at the
-   top of `docs/photos/index.html`. Captions read "Place, Month Year".
+   top of `docs/photos/index.html`. Captions read "Place, Year".
 4. **Home page:** save under `docs/assets/home/` and replace the matching placeholder
    `<div class="ph">` or `<span class="ph">` with an `<img>` of the same shape. The comment at the
    top of `docs/index.html` shows how.
