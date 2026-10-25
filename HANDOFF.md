@@ -192,8 +192,18 @@ only their own rows narrow.
 3a. Swap the placeholders for Rooj's photos (README.md "Adding photos"), strip EXIF first.
     Done 25 Oct 2026: the home wide photo (Koh Panyee pitch, also the link-preview image) and 18
     film photos on the Photos page (2019, 2020, 2022, 2025), picked by Rooj from Rooj's own film scans.
-    Years come from the lab scan dates; captions are "Place, Year". Still to come: the three home
-    thumbs (gelato, marathon, tortoises) and the Bristol Blockchain Society collage.
+    Years come from the lab scan dates; captions are "Place, Year".
+    Also 26 Oct 2026: 41 phone photos from Rooj's Strava (and two Cape Town Marathon photos Rooj
+    sent) went on the Photos page: a **Running** section first (`docs/photos/running/`), then new
+    2026 and 2024 sections. Race captions read "Race, Year · time"; the time is Strava's elapsed
+    time. Race list and times: Tokyo Marathon 2026 (with Rooj's cousin) 4:12:11 · Cape Town
+    Marathon 2026 (with Rooj's dad) 4:18:43 · New York City 5K 2025 24:24 · Sydney 10K 2025 49:40 ·
+    Great Bristol Run 10K 2025 55:30 · Bath Half 2025 1:53:13 · Bath Half 2024 2:18:22 (no photos).
+    Place guesses still to confirm: the dive photos as "Maldives" (no GPS) and the May 2026 run as
+    "Pilanesberg, South Africa" (Strava only gives Moses Kotane municipality). The four Dive
+    Terminal photos keep their watermark (Rooj confirmed they may be shared with it).
+    The home running thumb is the Clifton Suspension Bridge at night (Rooj's pick).
+    Still to come: the gelato and tortoise thumbs and the Bristol Blockchain Society collage.
 4. Add GoatCounter once Rooj has the code.
 5. ~~Merge to `master` and set Pages → `master` → `/docs`~~ (done 20 Oct 2026, fast-forward, at
    Rooj's request). After each later change: merge to `master`, check the live site.
