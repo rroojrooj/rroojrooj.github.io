@@ -11,8 +11,10 @@ Rooj Rinchokechai's personal site. Plain HTML + CSS served by GitHub Pages, no b
 - `design/mockup/*.dc.html` are the earlier canvas boards (Main = A Paper, VariantB = Index, VariantC = Letter,
   VariantD = Photo-first, plus Photos, Bookshelf and HomeMobile). They need the claude.ai canvas
   runtime, so read them as specs; don't serve them. `design/research/*.md` explain the choices.
-- Work on branch `redesign`. Don't push to or merge into `master` without asking. `gh-pages` is the
-  old, broken al-folio build; ask before deleting it.
+- Work on a branch off `master`. Don't push to or merge into `master` without asking: `master` →
+  `/docs` is the live site. The repo was recreated on 25 Oct 2026 (no longer a fork of al-folio) and
+  has only `master`; the old fork, with `gh-pages` and `redesign`, is `rroojrooj.github.io-old`.
+  Don't delete it; Rooj will.
 
 ## Ground rules
 

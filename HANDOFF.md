@@ -5,7 +5,7 @@ truth for picking the work back up.
 
 ## Where things stand
 
-- **Branch `redesign`** (this branch). The old al-folio theme is deleted. The first draft Rooj
+- **Branch `master`** (the only branch). The old al-folio theme is deleted. The first draft Rooj
   rejected (big hero, pill buttons, card grid, numbered headings) was replaced on 20 Oct 2026 by the
   **real site, built from layout G**, in **`docs/`**: `index.html`, `photos/index.html`,
   `bookshelf/index.html`, `404.html`, `assets/css/site.css`, self-hosted Source Serif 4 in
@@ -13,10 +13,12 @@ truth for picking the work back up.
   placeholders until Rooj sends them, and empty photo slots are hidden by CSS on the live site
   (they appear as soon as a real `<img>` replaces the placeholder). Design tokens and rules are in
   `DESIGN.md`.
-- **Live since 20 Oct 2026**: `redesign` was fast-forwarded into `master` and GitHub Pages switched to
-  `master` → `/docs`. Pushing to `master` now publishes. Keep working on `redesign` (or a branch)
-  and merge when ready. The old `gh-pages` branch still exists; ask Rooj before deleting it.
-  Checked at 390px and 1280px in light and dark: self-hosted font loads, no third-party requests,
+- **Live since 20 Oct 2026**: GitHub Pages serves `master` → `/docs`. Pushing to `master` publishes.
+  Work on a branch and merge when ready.
+  **Repo recreated 25 Oct 2026**: the GitHub repo was a fork of al-folio, so Rooj renamed it to
+  `rroojrooj.github.io-old` and pushed `master` to a new, non-fork `rroojrooj.github.io` (Pages
+  re-enabled on `master` → `/docs`). The new repo has no `gh-pages` or `redesign` branch; those exist
+  only in the `-old` repo, which Rooj will delete himself. Checked at 390px and 1280px in light and dark: self-hosted font loads, no third-party requests,
   no horizontal scroll, no console errors, all internal links resolve.
 - **Mockup**: a claude.ai Design canvas (private to Rooj):
   https://claude.ai/artifact/FVK9oM4JTpb43BF54LX2Mi. Its source is copied to `design/mockup/`:
@@ -37,9 +39,6 @@ truth for picking the work back up.
   B Plate, C Margin, D Portrait, E Contact sheet, F/G mixes) live in gstack's design folder,
   `~/.gstack/projects/rroojrooj-rroojrooj.github.io/designs/home-photos-20261020/`.
 - **Waiting on Rooj**: the photos (see "Home page photo slots" below), and approval of the copy.
-- **Live site today**: the `gh-pages` branch, built from al-folio in Dec 2023. It's broken because
-  every asset loads from `/home/...` (`baseurl: /home`). `master` still has the old theme and a
-  `deploy.yml` that isn't valid YAML.
 
 ## What Rooj wants
 
@@ -201,8 +200,9 @@ only their own rows narrow.
 3a. Swap the placeholders for Rooj's photos (README.md "Adding photos"), strip EXIF first.
 4. Add GoatCounter once Rooj has the code.
 5. ~~Merge to `master` and set Pages → `master` → `/docs`~~ (done 20 Oct 2026, fast-forward, at
-   Rooj's request). After each later change: merge to `master`, check the live site. Ask before
-   deleting the old `gh-pages` branch.
+   Rooj's request). After each later change: merge to `master`, check the live site.
+6. ~~Remove the "forked from al-folio" label~~ (done 25 Oct 2026 by recreating the repo). Rooj deletes
+   `rroojrooj.github.io-old` when ready.
 
 ## Reference
 
