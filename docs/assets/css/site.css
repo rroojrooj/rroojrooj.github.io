@@ -166,7 +166,8 @@ main > .year + .year { margin-top: 40px; }
 .set a { display: block; text-decoration: none; }
 /* The caption titles its set from above, so the label opens the group instead of trailing it. */
 .set > figcaption { margin: 0 0 2px; font-size: 15px; color: var(--text); }
-.set .meta { margin-left: 6px; color: var(--muted); font-variant-numeric: tabular-nums; }
+/* No left margin: when a narrow set wraps the caption, the year and time start flush on line two. */
+.set .meta { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .set .note { display: block; margin-top: 2px; font-size: 14px; color: var(--muted); }
 
 /* ---------- Bookshelf ---------- */
