@@ -158,7 +158,8 @@ details > div { display: flex; flex-direction: column; gap: 14px; }
 /* Scaled by 1000: grow factors that add up to less than 1 would leave a lone portrait short. */
 .row > a, .row > figure { flex: calc(var(--ar) * 1000) 1 0; min-width: 0; margin: 0; }
 .set a { display: block; text-decoration: none; }
-.set > figcaption { margin: 0; font-size: 15px; color: var(--text); }
+/* The caption titles its set from above, so the label opens the group instead of trailing it. */
+.set > figcaption { margin: 0 0 2px; font-size: 15px; color: var(--text); }
 .set .note { display: block; margin-top: 2px; font-size: 14px; color: var(--muted); }
 
 /* ---------- Bookshelf ---------- */
