@@ -144,6 +144,10 @@ details > div { display: flex; flex-direction: column; gap: 14px; }
 /* ---------- Photos ---------- */
 
 .page-intro { display: flex; flex-direction: column; gap: 8px; }
+.page-intro p { text-wrap: pretty; }
+/* Jump links to each year and to Running: the page is long, so say what's on it up front.
+   Spacing alone separates them (they're underlined), so nothing dangles when the line wraps. */
+.jump { display: flex; flex-wrap: wrap; column-gap: 18px; row-gap: 6px; font-size: 16px; }
 .year { display: flex; flex-direction: column; gap: 18px; }
 .year h2 { margin: 0; font-variant-numeric: tabular-nums; }
 .year h3 { margin: 18px 0 0; font-size: 16px; font-weight: 400; color: var(--muted); }
