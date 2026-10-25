@@ -54,7 +54,7 @@ truth for picking the work back up.
 | Links | workwithrooj@gmail.com · [LinkedIn](https://www.linkedin.com/in/roojrin) · [GitHub](https://github.com/rroojrooj). **No personal X.** Belfort's [@BelfortResearch](https://x.com/BelfortResearch) is fine. |
 | Featured | Only **Belfort** and **Wim's Lab**. Every other project goes in a collapsed dropdown. |
 | Pages | Home, **Photos** (pictures he's taken over the years; must be easy to add more), **Bookshelf** |
-| Bookshelf | Titles only, grouped by genre. **No ratings, reviews, or read/reading status.** |
+| Bookshelf | Titles and authors (authors added 25 Oct 2026), grouped by genre, all on one laptop screen. **No ratings, reviews, or read/reading status.** |
 | Not wanted (for now) | CV PDF, blog/writing section, photo of himself, Thai version |
 | Look | Serif, warm off-white, monochrome underlined links, dark mode follows the system (no toggle) |
 | Footer | "Last updated" date |
@@ -136,21 +136,13 @@ Deliberately left off: a YC mention (it could read as YC-backed), the full exper
 the foundation programme and the bootcamp stats. Some personal notes Rooj shared are intentionally
 not on the site; they're in the private transcripts.
 
-## Bookshelf (titles only, by genre)
+## Bookshelf (titles and authors, by genre)
 
-- **Investing**: The Intelligent Investor · The Most Important Thing Illuminated · University of
-  Berkshire Hathaway · Buffettology · The Richest Man in Babylon
-- **Business**: Zero to One · The Lean Startup · The Hard Thing About Hard Things · Blitzscaling ·
-  Trillion Dollar Coach · Competitive Strategy · Principles · The Art of War
-- **Biography & memoir**: Titan · When Breath Becomes Air · Tuesdays with Morrie
-- **Psychology**: Man's Search for Meaning · Outliers · Talking to Strangers · Men Are from Mars,
-  Women Are from Venus
-- **Fiction**: Pachinko · The Kite Runner · Norwegian Wood · Men Without Women · If Cats Disappeared
-  from the World · The Catcher in the Rye · Lord of the Flies · Of Mice and Men · What We Talk About
-  When We Talk About Love · The Alchemist · The Five People You Meet in Heaven
-- **Thrillers**: Verity · Origin
-
-(His Goodreads paste was cut off after *The Richest Man in Babylon*, so there may be more.)
+The list lives in `docs/bookshelf/index.html`; that file is the source of truth. On 25 Oct 2026 Rooj
+sent the rest of the list (the Goodreads paste had been cut off) and asked for authors and for the
+whole shelf to fit on one screen. The genres now flow into columns (five at 1280px wide), and three
+genres were added: Self-help, Classics, Textbooks. Authors for "Ice Cream" (Goff & Hartel) and
+"Introduction to Computer Security" (Goodrich & Tamassia) are best guesses; confirm with Rooj.
 
 ## Design directions (same content in each)
 

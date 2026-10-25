@@ -152,9 +152,15 @@ details > div { display: flex; flex-direction: column; gap: 14px; }
 
 /* ---------- Bookshelf ---------- */
 
-.shelf { display: flex; flex-direction: column; gap: 36px; }
-.shelf h2 { margin-bottom: 8px; font-size: 15px; font-weight: 400; color: var(--muted); }
-.shelf li + li { margin-top: 4px; }
+/* Genres flow into columns so the whole shelf fits on one screen on a laptop. */
+/* A genre may continue into the next column; its heading never sits alone at a column's foot. */
+main.books { max-width: 1200px; gap: 24px; padding-top: 44px; padding-bottom: 44px; }
+.shelf { column-width: 210px; column-gap: 28px; }
+.shelf section { margin-bottom: 20px; }
+.shelf h2 { margin-bottom: 6px; font-size: 14px; font-weight: 400; color: var(--muted); break-after: avoid; }
+.shelf li { font-size: 15px; line-height: 1.35; break-inside: avoid; }
+.shelf li + li { margin-top: 5px; }
+.shelf .by { color: var(--muted); font-size: 13px; }
 
 /* ---------- Photos not added yet ---------- */
 

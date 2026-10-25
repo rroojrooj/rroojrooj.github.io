@@ -13,7 +13,11 @@
 <link rel="stylesheet" href="../assets/css/site.css">
 </head>
 <body>
-<main>
+<!--
+  Adding a book: one line in its genre, <li>Title <span class="by">Author</span></li>.
+  The genres flow into columns on wide screens so the whole shelf fits on one screen.
+-->
+<main class="wide books">
 <nav aria-label="Site"><a href="../">Home</a><a href="../photos/">Photos</a><span aria-current="page">Bookshelf</span></nav>
 
 <h1>Bookshelf</h1>
@@ -22,75 +26,110 @@
 <section aria-labelledby="investing">
 <h2 id="investing">Investing</h2>
 <ul>
-<li>The Intelligent Investor</li>
-<li>The Most Important Thing Illuminated</li>
-<li>University of Berkshire Hathaway</li>
-<li>Buffettology</li>
-<li>The Richest Man in Babylon</li>
+<li>The Intelligent Investor <span class="by">Benjamin Graham</span></li>
+<li>One Up on Wall Street <span class="by">Peter Lynch</span></li>
+<li>The Most Important Thing Illuminated <span class="by">Howard Marks</span></li>
+<li>University of Berkshire Hathaway <span class="by">Daniel Pecaut &amp; Corey Wrenn</span></li>
+<li>Buffettology <span class="by">Mary Buffett &amp; David Clark</span></li>
+<li>The Psychology of Money <span class="by">Morgan Housel</span></li>
+<li>Rich Dad Poor Dad <span class="by">Robert T. Kiyosaki</span></li>
+<li>The Richest Man in Babylon <span class="by">George S. Clason</span></li>
 </ul>
 </section>
 
 <section aria-labelledby="business">
 <h2 id="business">Business</h2>
 <ul>
-<li>Zero to One</li>
-<li>The Lean Startup</li>
-<li>The Hard Thing About Hard Things</li>
-<li>Blitzscaling</li>
-<li>Trillion Dollar Coach</li>
-<li>Competitive Strategy</li>
-<li>Principles</li>
-<li>The Art of War</li>
+<li>Zero to One <span class="by">Peter Thiel</span></li>
+<li>The Lean Startup <span class="by">Eric Ries</span></li>
+<li>The Hard Thing About Hard Things <span class="by">Ben Horowitz</span></li>
+<li>Blitzscaling <span class="by">Reid Hoffman &amp; Chris Yeh</span></li>
+<li>Built to Last <span class="by">Jim Collins &amp; Jerry I. Porras</span></li>
+<li>Trillion Dollar Coach <span class="by">Eric Schmidt, Jonathan Rosenberg &amp; Alan Eagle</span></li>
+<li>Competitive Strategy <span class="by">Michael E. Porter</span></li>
+<li>Getting to Yes <span class="by">Roger Fisher &amp; William Ury</span></li>
+<li>Principles <span class="by">Ray Dalio</span></li>
+<li>The Art of War <span class="by">Sun Tzu</span></li>
 </ul>
 </section>
 
 <section aria-labelledby="biography">
 <h2 id="biography">Biography &amp; memoir</h2>
 <ul>
-<li>Titan</li>
-<li>When Breath Becomes Air</li>
-<li>Tuesdays with Morrie</li>
+<li>Titan <span class="by">Ron Chernow</span></li>
+<li>When Breath Becomes Air <span class="by">Paul Kalanithi</span></li>
+<li>Tuesdays with Morrie <span class="by">Mitch Albom</span></li>
 </ul>
 </section>
 
 <section aria-labelledby="psychology">
 <h2 id="psychology">Psychology</h2>
 <ul>
-<li>Man's Search for Meaning</li>
-<li>Outliers</li>
-<li>Talking to Strangers</li>
-<li>Men Are from Mars, Women Are from Venus</li>
+<li>Man's Search for Meaning <span class="by">Viktor E. Frankl</span></li>
+<li>Outliers <span class="by">Malcolm Gladwell</span></li>
+<li>Talking to Strangers <span class="by">Malcolm Gladwell</span></li>
+<li>Men Are from Mars, Women Are from Venus <span class="by">John Gray</span></li>
+</ul>
+</section>
+
+<section aria-labelledby="self-help">
+<h2 id="self-help">Self-help</h2>
+<ul>
+<li>How to Win Friends and Influence People <span class="by">Dale Carnegie</span></li>
+<li>The Almanack of Naval Ravikant <span class="by">Eric Jorgenson</span></li>
+<li>As a Man Thinketh <span class="by">James Allen</span></li>
+<li>Who Moved My Cheese? <span class="by">Spencer Johnson</span></li>
 </ul>
 </section>
 
 <section aria-labelledby="fiction">
 <h2 id="fiction">Fiction</h2>
 <ul>
-<li>Pachinko</li>
-<li>The Kite Runner</li>
-<li>Norwegian Wood</li>
-<li>Men Without Women</li>
-<li>If Cats Disappeared from the World</li>
-<li>The Catcher in the Rye</li>
-<li>Lord of the Flies</li>
-<li>Of Mice and Men</li>
-<li>What We Talk About When We Talk About Love</li>
-<li>The Alchemist</li>
-<li>The Five People You Meet in Heaven</li>
+<li>Pachinko <span class="by">Min Jin Lee</span></li>
+<li>The Kite Runner <span class="by">Khaled Hosseini</span></li>
+<li>The Song of Achilles <span class="by">Madeline Miller</span></li>
+<li>Norwegian Wood <span class="by">Haruki Murakami</span></li>
+<li>Men Without Women <span class="by">Haruki Murakami</span></li>
+<li>No Longer Human <span class="by">Osamu Dazai</span></li>
+<li>If Cats Disappeared from the World <span class="by">Genki Kawamura</span></li>
+<li>What We Talk About When We Talk About Love <span class="by">Raymond Carver</span></li>
+<li>The Alchemist <span class="by">Paulo Coelho</span></li>
+<li>The Five People You Meet in Heaven <span class="by">Mitch Albom</span></li>
+</ul>
+</section>
+
+<section aria-labelledby="classics">
+<h2 id="classics">Classics</h2>
+<ul>
+<li>Paradise Lost <span class="by">John Milton</span></li>
+<li>The Picture of Dorian Gray <span class="by">Oscar Wilde</span></li>
+<li>The Little Prince <span class="by">Antoine de Saint-Exupéry</span></li>
+<li>Of Mice and Men <span class="by">John Steinbeck</span></li>
+<li>The Catcher in the Rye <span class="by">J. D. Salinger</span></li>
+<li>Lord of the Flies <span class="by">William Golding</span></li>
+<li>Fahrenheit 451 <span class="by">Ray Bradbury</span></li>
 </ul>
 </section>
 
 <section aria-labelledby="thrillers">
 <h2 id="thrillers">Thrillers</h2>
 <ul>
-<li>Verity</li>
-<li>Origin</li>
+<li>Verity <span class="by">Colleen Hoover</span></li>
+<li>Origin <span class="by">Dan Brown</span></li>
+</ul>
+</section>
+
+<section aria-labelledby="textbooks">
+<h2 id="textbooks">Textbooks</h2>
+<ul>
+<li>Ice Cream <span class="by">H. Douglas Goff &amp; Richard W. Hartel</span></li>
+<li>Introduction to Computer Security <span class="by">Michael T. Goodrich &amp; Roberto Tamassia</span></li>
 </ul>
 </section>
 </div>
 
 <footer>
-<p>Last updated 20 October 2026</p>
+<p>Last updated 25 October 2026</p>
 </footer>
 </main>
 </body>
