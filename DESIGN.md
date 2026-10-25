@@ -164,11 +164,12 @@ Square corners everywhere, photos included. Nothing on the page is a pill, a car
   shows draft boxes. Captions read "Place, Year" on both pages: short, no month (Rooj's choice,
   25 Oct 2026). EXIF, including GPS, is stripped first.
 - **Photos page sets (26 Oct 2026):** photos are grouped into sets, one per race or place, with
-  one caption per set (never repeated under each photo) and an optional short note. The page is a
-  12-column grid; each set takes `--span` columns and each photo `--s`, chosen so sizes vary within
-  and between sets and bottoms stay uneven. A caption may sit beside its photos when a row has room.
-  Running comes first (races, then training runs), then places by year with the year as the heading,
-  so place captions drop the year. On phones photos pair up and a set's lead photo goes full width.
+  one caption per set (never repeated under each photo) and an optional short note. The caption
+  sits above its photos as the set's title. A set is a stack of rows; every photo in a row shares
+  one height (it grows by its aspect ratio), so rows never leave holes, and sizes vary with how
+  many photos share a row. Sets sit 48px apart, photos inside a set 10px. Places by year come
+  first, newest first, with the year as the heading (so place captions drop the year); Running
+  (races, then training runs) comes last. On phones photos pair up two by two.
 - **Footer:** one optional line of invitation, then "Last updated …".
 
 ## Do's and Don'ts
