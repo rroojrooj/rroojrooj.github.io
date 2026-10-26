@@ -185,7 +185,9 @@ figcaption { margin-top: 6px; font-size: 14px; color: var(--muted); line-height:
 .rows { display: grid; grid-template-columns: 112px minmax(0, 1fr); column-gap: 20px; row-gap: 10px; }
 .rows > dt { color: var(--muted); }
 .rows > dd { margin: 0; display: flow-root; }
-.more-on { margin-top: 10px; font-size: 16px; }
+/* Experience: Education, then Work, each under its own heading, with a thin rule between them. */
+.experience h3 { margin: 0 0 12px; font-size: 18px; line-height: 1.4; font-weight: 600; }
+.experience dl + h3 { margin-top: 28px; padding-top: 26px; border-top: 1px solid var(--rule); }
 /* Experience dates: smaller, so a month range fits the label column in two short lines at most. */
 .dated > dt { font-size: 15px; line-height: 1.4; padding-top: 3px; font-variant-numeric: tabular-nums; }
 

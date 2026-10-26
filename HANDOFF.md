@@ -52,7 +52,7 @@ truth for picking the work back up.
 | Topic | Decision |
 |---|---|
 | Name / place | Rooj Rinchokechai · Bangkok, Thailand |
-| Links | workwithrooj@gmail.com · [LinkedIn](https://www.linkedin.com/in/roojrin) · [GitHub](https://github.com/rroojrooj). **No personal X.** Belfort's [@BelfortResearch](https://x.com/BelfortResearch) is fine. |
+| Links | workwithrooj [at] gmail.com · [LinkedIn](https://www.linkedin.com/in/roojrin) · [GitHub](https://github.com/rroojrooj). **No personal X.** Belfort's [@BelfortResearch](https://x.com/BelfortResearch) is fine. |
 | Featured | Only **Belfort** and **Wim's Lab**. Every other project goes in a collapsed dropdown. |
 | Pages | Home, **Photos** (pictures he's taken over the years; must be easy to add more), **Bookshelf** |
 | Bookshelf | Titles and authors (authors added 25 Oct 2026), grouped by genre, all on one laptop screen. **No ratings, reviews, or read/reading status.** |
@@ -77,7 +77,7 @@ Hugo with hand-written layouts. Avoid al-folio and Hugo Blox, which repeat the o
 Order matters: identity → both sides in two sentences → the two things he's building → the
 non-CV side as the main section → everything else folded away.
 
-1. **Rooj Rinchokechai** / Bangkok, Thailand / workwithrooj@gmail.com · LinkedIn · GitHub
+1. **Rooj Rinchokechai** / Bangkok, Thailand / workwithrooj [at] gmail.com · LinkedIn · GitHub
 2. Intro: "I'm building Belfort, an AI analyst for individual investors, and making high-protein
    gelato at Wim's Lab. Away from work, I run marathons, play too much golf and look after three
    giant tortoises." Then the wide photo (layout G).
@@ -286,7 +286,7 @@ only their own rows narrow.
   plain <span> cells in ink tones of the text colour, caption "N contributions on GitHub in the year
   to <Month Year>". Run it again to refresh.
 - Bristol Blockchain Society: the placeholder collage is replaced by one real photo, the pub after a
-  workshop (28 Feb 2025, from Rooj's HEIC, resized to 1600px, EXIF stripped). More society photos can
+  workshop, captioned "Bristol Blockchain Society, Bristol, 2025" (28 Feb 2025, from Rooj's HEIC, resized to 1600px, EXIF stripped). More society photos can
   bring the collage back.
 - Heatmap, later: stronger ink steps (empty days in the rule colour, then 30%, 55%, 78% and 100% of
   the text colour, mixed with color-mix so hover labels stay solid) and a hover label on every day
@@ -307,3 +307,11 @@ only their own rows narrow.
   hides any `.year` without an image.)
 - Other projects is no longer folded (Rooj, 26 Oct 2026): a visible section at the bottom, above the
   footer, in the same year/name/one-line rows as Experience, set at 16px so it reads as a footnote.
+- Experience, later (Rooj): full company names, a little more detail per role from the CV, work
+  sorted newest first by real dates (BMA, Kiatnakin Phatra Financial Group, Token Unlocks, TISCO
+  Financial Group), Education on its own under a small muted label (Bristol, Sep 2021 – May 2025,
+  after a foundation year). The "More on LinkedIn" line is gone; LinkedIn is in the header.
+- Education adds Patumwan Demonstration School, 2014 – 2021 (CV says Jan 2014 – Jan 2021; shown as years).
+- Experience order is now Education first, then Work (Rooj). Each group has its own 18px heading,
+  like the project names under Now, with a thin rule between the groups.
+- Email is shown as plain text "workwithrooj [at] gmail.com" with no mailto link (Rooj, against spam bots); the notes and mockups mask it the same way.
