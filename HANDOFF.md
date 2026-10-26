@@ -337,3 +337,4 @@ only their own rows narrow.
 - Experience order is now Education first, then Work (Rooj). Each group has its own 18px heading,
   like the project names under Now, with a thin rule between the groups.
 - Email is shown as plain text "workwithrooj [at] gmail.com" with no mailto link (Rooj, against spam bots); the notes and mockups mask it the same way.
+- Heatmap moved under Belfort (Rooj, 27 Oct 2026): it sits at the end of the Belfort entry, before Wim's Lab, with no rule above it. The build_heatmap markers moved with it, so the script still works. The snapshot was refreshed (8,236 contributions).

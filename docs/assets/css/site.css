@@ -151,7 +151,7 @@ figcaption { margin-top: 6px; font-size: 14px; color: var(--muted); line-height:
 
 /* GitHub heatmap under Now: one cell per day, a week per column, in Bristol red (the --heat-*
    tokens). The site's only colour. Written by tools/build_heatmap.py. */
-.heatmap { margin-top: 30px; padding-top: 28px; border-top: 1px solid var(--rule); }
+.heatmap { margin-top: 22px; }
 .heatmap .months { display: grid; grid-template-columns: repeat(var(--weeks), minmax(0, 1fr)); column-gap: 2px; margin-bottom: 4px; font-size: 12px; line-height: 1.3; color: var(--muted); }
 .heatmap .months > span { grid-row: 2; white-space: nowrap; }
 .heatmap .months > .yr { grid-row: 1; color: var(--text); }
