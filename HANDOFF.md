@@ -302,3 +302,6 @@ only their own rows narrow.
   #6E2530 → #AB1F2D → #E0626E. Empty days are a near-page tint so they no longer look like activity.
 - The three gelato photos are recropped from the logo on each cup, so every cup is the same size and
   height and centred: matcha, chocolate, cookies (light, dark, light).
+- Heatmap axis: month names over the week each month starts, with the year (2025, 2026) on a line
+  above them, written by tools/build_heatmap.py. (The class is `yr`, not `year`: the Photos page
+  hides any `.year` without an image.)

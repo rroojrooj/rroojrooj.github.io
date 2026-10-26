@@ -44,6 +44,22 @@ def fetch():
     return data["data"]["user"]["contributionsCollection"]["contributionCalendar"]
 
 
+def months(weeks):
+    """Month names over the week where each month starts, with the year on a line above them."""
+    starts = [date.fromisoformat(w["contributionDays"][0]["date"]) for w in weeks]
+    marks = [i for i, d in enumerate(starts) if i == 0 or d.month != starts[i - 1].month]
+    # A month that only reaches into the first week or two has no room for its name.
+    if len(marks) > 1 and marks[1] - marks[0] < 3:
+        marks = marks[1:]
+    out = []
+    for n, i in enumerate(marks):
+        d = starts[i]
+        if n == 0 or d.month == 1:
+            out.append(f'<span class="yr" style="grid-column: {i + 1}">{d.year}</span>')
+        out.append(f'<span style="grid-column: {i + 1}">{d:%b}</span>')
+    return "".join(out)
+
+
 def render(cal):
     total = cal["totalContributions"]
     cells = []
@@ -60,7 +76,8 @@ def render(cal):
             tip = f'{n or "No"} contribution{"" if n == 1 else "s"} · {date.fromisoformat(d["date"]):%-d %b %Y}'
             cells.append(f'<span class="c{LEVELS[d["contributionLevel"]]}{edge}" data-tip="{tip}"></span>')
     label = f"{total:,} contributions on GitHub in the past year"
-    return (f'<figure class="heatmap">\n'
+    return (f'<figure class="heatmap" style="--weeks: {len(weeks)}">\n'
+            f'<div class="months" aria-hidden="true">{months(weeks)}</div>\n'
             f'<div class="cells" role="img" aria-label="{html.escape(label)}">{"".join(cells)}</div>\n'
             f'<figcaption>{total:,} contributions on <a href="https://github.com/{USER}">GitHub</a> '
             f'in the year to {date.today():%B %Y}</figcaption>\n'
