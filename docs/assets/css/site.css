@@ -198,7 +198,8 @@ figcaption { margin-top: 6px; font-size: 14px; color: var(--muted); line-height:
 .collage .big { grid-row: span 2; }
 .collage .big > .ph, .collage .big > img { height: 100%; object-fit: cover; }
 
-.more { display: flex; flex-direction: column; gap: 12px; font-size: 17px; }
+/* Other projects: shown, but set a size down so it reads as a footnote to the page. */
+.projects .rows { font-size: 16px; }
 summary { cursor: pointer; color: var(--muted); width: fit-content; }
 details > div, details > p { margin: 14px 0 6px 18px; }
 details > div { display: flex; flex-direction: column; gap: 14px; }

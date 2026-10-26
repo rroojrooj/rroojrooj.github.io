@@ -305,3 +305,5 @@ only their own rows narrow.
 - Heatmap axis: month names over the week each month starts, with the year (2025, 2026) on a line
   above them, written by tools/build_heatmap.py. (The class is `yr`, not `year`: the Photos page
   hides any `.year` without an image.)
+- Other projects is no longer folded (Rooj, 26 Oct 2026): a visible section at the bottom, above the
+  footer, in the same year/name/one-line rows as Experience, set at 16px so it reads as a footnote.
