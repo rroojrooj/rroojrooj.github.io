@@ -140,9 +140,31 @@ not on the site; they're in the private transcripts.
 
 The list lives in `docs/bookshelf/index.html`; that file is the source of truth. On 25 Oct 2026 Rooj
 sent the rest of the list (the Goodreads paste had been cut off) and asked for authors and for the
-whole shelf to fit on one screen. The genres now flow into columns (five at 1280px wide), and three
+whole shelf to fit on one screen. The genres now flow into columns, and three
 genres were added: Self-help, Classics, Textbooks. Authors for "Ice Cream" (Goff & Hartel) and
 "Introduction to Computer Security" (Goodrich & Tamassia) are best guesses; confirm with Rooj.
+There are 50 books (an earlier count of 51 included the example line in the page's comment).
+
+**Covers (26 Oct 2026, at Rooj's request).** Each book has a small 24×36 cover left of its title.
+Hovering a cover, or tabbing to it, shows a 200px version beside it; clicking or tapping opens a
+320px version alone on the page (a click, tap or Esc closes it). It is `<img popover>` plus CSS, no
+JavaScript, and it is the one hover effect on the site (logged in DESIGN.md). Files are in
+`docs/bookshelf/covers/`: `<slug>.jpg` (48×72) and `<slug>-large.jpg` (the scan's own size, at
+most 480px wide), with metadata stripped. 1.7 MB in all, but the page itself only loads the 67 KB of
+small covers; a large one loads when it is first shown. 49 come from Open Library (common English
+editions, chosen by eye), and Blitzscaling's jacket comes from the publisher (Penguin Random House),
+because Open Library only has its title page. `design/research/bookshelf-covers.md` lists every
+edition. The two guessed textbooks use: Ice Cream, 7th edition (Goff & Hartel, Springer, 2013; the
+scan is the 2015 paperback); and Introduction to Computer Security, 1st edition (Goodrich & Tamassia,
+Addison-Wesley, 2011).
+To fit the covers on one screen, the column gap went from 28px to 24px, which gives five columns at
+1280px (four columns had run to 817px); Rooj chose this over squeezing four columns. A design pass
+the same day, which Rooj asked for, then kept each genre whole in one column, so every column starts
+with its label. The gap between genres went from 18px to 14px, and titles and authors now wrap
+balanced. At 1280×800 the last book ends at 777px. It no longer fits a 768px-tall window. At
+1024×700 the shelf is four columns and scrolls, as it did before (1009px, against 829px before
+covers). Checked in Chromium only. Safari 26+ and Firefox 147+ support the anchor positioning used
+for the side-by-side preview; older browsers show the preview in the middle of the window instead.
 
 ## Design directions (same content in each)
 

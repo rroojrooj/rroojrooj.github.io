@@ -90,6 +90,17 @@ components:
     backgroundColor: "{colors.photo-placeholder}"
     textColor: "{colors.photo-placeholder-text}"
     rounded: "{rounded.none}"
+  book-cover:
+    width: 24px
+    height: 36px
+    outlineColor: "{colors.rule}"
+    rounded: "{rounded.none}"
+  book-cover-preview:
+    width: 200px
+    gap: 10px
+  book-cover-open:
+    width: 320px
+    backdropColor: "{colors.surface}"
 ---
 
 # Rooj Rinchokechai
@@ -181,6 +192,14 @@ Square corners everywhere, photos included. Nothing on the page is a pill, a car
   per-photo captions lose the stories), a map (GPS is stripped; map tiles are third-party),
   search, shuffle, view switchers and a lightbox.
 - **Footer:** one optional line of invitation, then "Last updated …".
+- **Book covers (Bookshelf):** a 24×36 cover left of each title and author, with a 1px rule-colour
+  hairline so white covers keep an edge. Hovering a cover, or reaching it with Tab, shows a 200px
+  version beside it (right of the cover, flipping above or left to stay on screen; centred in the
+  window where anchor positioning isn't supported). Clicking or tapping opens a 320px version alone
+  on the page colour; a click, tap or Esc closes it. It is `<img popover>` plus CSS, with no
+  JavaScript. Touch screens get the tap only, never the hover. Covers are self-hosted under
+  `docs/bookshelf/covers/`, with metadata stripped; `design/research/bookshelf-covers.md` lists the
+  edition behind each one.
 
 ## Do's and Don'ts
 
@@ -190,7 +209,8 @@ Square corners everywhere, photos included. Nothing on the page is a pill, a car
 - Do let dark mode follow the system.
 - Do keep the site plain HTML/CSS in `docs/`, with self-hosted fonts and no third-party requests.
 - Don't add icons, pill buttons, cards, hover lifts, a hero section, numbered headings, animation,
-  a sticky nav or a theme toggle.
+  a sticky nav or a theme toggle. The one hover effect is the Bookshelf's cover preview (Rooj's
+  explicit exception, 26 Oct 2026); it appears and disappears instantly and is not animated.
 - Don't add JavaScript, a build step or a framework.
 - Don't use colour for emphasis or add an accent colour.
 - Don't put CV material (job lists, dates, bootcamp stats) on the page; it lives on LinkedIn.
@@ -200,7 +220,8 @@ Square corners everywhere, photos included. Nothing on the page is a pill, a car
 
 ## Motion
 
-- **Approach:** none. Nothing moves; the page loads and stays still.
+- **Approach:** none. Nothing moves; the page loads and stays still. (The Bookshelf's large cover
+  shows and hides with no transition.)
 - **Easing / duration:** not applicable.
 - **The one authored moment:** the first photo landing under the intro.
 
@@ -214,3 +235,6 @@ Square corners everywhere, photos included. Nothing on the page is a pill, a car
 | 2026-10-20 | Publish `docs/` only | Keeps HANDOFF.md, CLAUDE.md and design material off the public website |
 | 2026-10-20 | Go live before photos, with empty photo slots hidden by CSS | Rooj wanted the site live now; hiding beats showing grey "[Place, year]" boxes, and photos appear automatically when added |
 | 2026-10-20 | Belfort: a one-line belief plus a closed "Why I'm building it" dropdown (the work is slow, institutions have what individuals lack, so Belfort) | Built from Rooj's own words: investing can be easier, more efficient and more effective; individuals deserve institution-level intelligence at a lower price. Rejected along the way: feature rows ("not the product page"), a hard-to-read draft using "dream", and invented details |
+| 2026-10-26 | Bookshelf: a small cover beside every book; hover or keyboard focus shows a large one beside it, a click or tap opens it centred | Rooj asked for it, as an explicit exception to "no hover effects". Built with `<img popover>`, `:hover`/`:focus-visible` and anchor positioning, so it needs no JavaScript and works on phones by tapping. Covers are self-hosted (no third-party requests) |
+| 2026-10-26 | Bookshelf column gap 28px → 24px, so it flows into five columns at 1280px | With covers, four columns ran to 817px at 1280×800 (two-line titles doubled from 5 to 10). Five columns end at 709px. Smaller covers did not help, and tighter spacing in four columns reached 799px at best, too close to the edge. Rooj chose five columns over four |
+| 2026-10-26 | Bookshelf: each genre stays in one column, so every column starts with a genre label; the gap between genres goes from 18px to 14px; titles and authors wrap balanced | Design pass after the covers, which Rooj asked for. Business, Fiction and Classics were splitting across columns: Fiction and Classics left a label and one book at a column's foot, and the rest of each genre started the next column with no label. Whole genres end at 777px at 1280×800. The 14px gap leaves room for "Man's Search for Meaning" (0.5px from wrapping) to wrap in another browser. Costs: the shelf no longer fits a 768px-tall window, and at four-column widths it scrolls further (1009px, against 834px with split genres). Balanced wrapping stops a lone last word ("Gray", "Wrenn"), and a no-break space keeps "&" with the name before it |
