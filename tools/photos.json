@@ -1,5 +1,5 @@
 {
- "_readme": "Trips for docs/photos/index.html, newest first. Each trip: name, year, optional parts (a muted second line naming what is in it), optional time (races), optional note, tags, photos (src without .jpg, alt). A tag listed in filters becomes a filter link. After editing, run: python3 tools/build_photos.py",
+ "_readme": "Trips for docs/photos/index.html, newest first. Each trip: name, year, optional parts (a muted second line naming what is in it), optional time (races), optional camera (the film camera(s) a trip was shot on), optional note, tags, photos (src without .jpg, alt). A tag listed in filters becomes a filter link. After editing, run: python3 tools/build_photos.py",
  "filters": [
   {
    "id": "all",
@@ -303,7 +303,8 @@
      "src": "2025/koh-tao-beach",
      "alt": "A beach seen from under a tree, people in deckchairs, the sea beyond"
     }
-   ]
+   ],
+   "camera": "Contax T2"
   },
   {
    "name": "Bath Half",
@@ -331,7 +332,8 @@
      "src": "2025/wembley",
      "alt": "A full Wembley Stadium during the Carabao Cup final"
     }
-   ]
+   ],
+   "camera": "Contax T2"
   },
   {
    "name": "Koh Yao Noi",
@@ -372,7 +374,8 @@
      "src": "2022/phang-nga-bay",
      "alt": "Limestone islands in silhouette over the water at dusk"
     }
-   ]
+   ],
+   "camera": "Contax T2 · Olympus XA"
   },
   {
    "name": "Kanchanaburi",
@@ -386,7 +389,8 @@
      "src": "2020/kanchanaburi-river",
      "alt": "A wide river reflecting white clouds, hills in the distance"
     }
-   ]
+   ],
+   "camera": "Contax T2"
   },
   {
    "name": "Bangkok",
@@ -400,7 +404,8 @@
      "src": "2019/bangkok-river",
      "alt": "The Chao Phraya at sunset, flags on a pier and a bridge in the distance"
     }
-   ]
+   ],
+   "camera": "Contax T2"
   },
   {
    "name": "Stockholm, Helsinki and Copenhagen",
@@ -437,7 +442,8 @@
      "src": "2019/nyhavn-bw",
      "alt": "Nyhavn's houses and moored sailing boats, in black and white"
     }
-   ]
+   ],
+   "camera": "Contax T2 · Olympus XA"
   },
   {
    "name": "Hokkaido",
@@ -463,7 +469,8 @@
      "src": "2019/biei-road",
      "alt": "A straight road running down between fields towards blue hills"
     }
-   ]
+   ],
+   "camera": "Contax T2"
   }
  ]
 }

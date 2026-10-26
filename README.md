@@ -1,6 +1,9 @@
 # rroojrooj.github.io
 
-Personal website of Rooj Rinchokechai: plain HTML and CSS, no JavaScript, no build step.
+Personal website of Rooj Rinchokechai: plain HTML and CSS, no build step. The only JavaScript is a
+few inline lines on the home page that pick the lead photo at random on each visit and power its
+← → arrows; to change the pool, edit the `photos` list in that script. The GitHub heatmap under Now
+is a snapshot: refresh it with `python3 tools/build_heatmap.py`.
 
 The website is everything in `docs/`. The rest of the repo (`HANDOFF.md`, `CLAUDE.md`, `DESIGN.md`,
 `design/`) is notes and design material and is not published.

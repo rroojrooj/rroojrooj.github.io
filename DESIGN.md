@@ -191,9 +191,13 @@ Square corners everywhere, photos included. Nothing on the page is a pill, a car
 - Do keep the site plain HTML/CSS in `docs/`, with self-hosted fonts and no third-party requests.
 - Don't add icons, pill buttons, cards, hover lifts, a hero section, numbered headings, animation,
   a sticky nav or a theme toggle.
-- Don't add JavaScript, a build step or a framework.
+- Don't add JavaScript, a build step or a framework. The one exception (26 Oct 2026, Rooj's request):
+  the home page's lead photo is picked at random on each visit by a small inline script, with no
+  motion and Koh Panyee as the no-JavaScript fallback. Two muted text arrows (← →) at the right of
+  its caption step through the six photos; they stay hidden without JavaScript.
 - Don't use colour for emphasis or add an accent colour.
-- Don't put CV material (job lists, dates, bootcamp stats) on the page; it lives on LinkedIn.
+- Keep CV material short: since 26 Oct 2026 a visible Experience block (education, past employers) sits
+  under Now, at Rooj's request. No bootcamp stats or full job timeline; the detail lives on LinkedIn.
 - Don't turn project entries into product pages: no feature lists or how-it-works. Write about the
   goal and the belief, in the first person, in short plain sentences that lead into each other.
   Never "my dream" or "the dream".
@@ -214,3 +218,9 @@ Square corners everywhere, photos included. Nothing on the page is a pill, a car
 | 2026-10-20 | Publish `docs/` only | Keeps HANDOFF.md, CLAUDE.md and design material off the public website |
 | 2026-10-20 | Go live before photos, with empty photo slots hidden by CSS | Rooj wanted the site live now; hiding beats showing grey "[Place, year]" boxes, and photos appear automatically when added |
 | 2026-10-20 | Belfort: a one-line belief plus a closed "Why I'm building it" dropdown (the work is slow, institutions have what individuals lack, so Belfort) | Built from Rooj's own words: investing can be easier, more efficient and more effective; individuals deserve institution-level intelligence at a lower price. Rejected along the way: feature rows ("not the product page"), a hard-to-read draft using "dream", and invented details |
+| 2026-10-26 | Home order: Now, then Bristol Blockchain Society, then Outside work; Other projects and Background stay folded at the end | The Society story is the backstory to Belfort (the same belief: finance open to anyone) and the strongest writing; the folded CV material stays last |
+| 2026-10-26 | Lead photo changes on each visit (six photos from the Photos page), and links to Photos | Rooj wanted it more interactive; a random pick on load has no motion, unlike a slideshow, and works with a mouse, unlike a swipe strip |
+| 2026-10-26 | Belfort is one piece with no dropdown: the investing story, why Belfort, then the first months of learning (Rooj's "a lot of how-tos") | Rooj asked to drop "Why I'm building it" and tell it as one coherent story |
+| 2026-10-26 | Now entries: name as its own heading (18px/600), role and start month on a muted line below, a thin rule between entries | Rooj found Belfort and Wim's Lab hard to tell apart when name, role and text all ran at body size |
+| 2026-10-26 | Scan first, read later: Now is one line per project; Experience (visible) follows; the long stories (Why I'm building Belfort, Bristol Blockchain Society) sit below Outside work | Rooj found the top too text-heavy and wanted his work experience shown, not folded; Belfort links down to its story |
+| 2026-10-26 | Belfort's story goes back under Belfort as a closed dropdown; when open it is set off by a thin left rule | Rooj wanted the story next to Belfort but the top still easy to scan |

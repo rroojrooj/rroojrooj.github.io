@@ -27,8 +27,10 @@ Rooj Rinchokechai's personal site. Plain HTML + CSS served by GitHub Pages, no b
   notes and design material and must not be linked from or copied into `docs/`.
 - The site is built from layout G: `docs/index.html`, `docs/photos/index.html`,
   `docs/bookshelf/index.html`, `docs/404.html` (absolute paths), one stylesheet
-  `docs/assets/css/site.css`, and the self-hosted font in `docs/assets/fonts/`. No JavaScript. Grey
-  `class="ph"` blocks are photo placeholders; README.md says how to swap in real photos.
+  `docs/assets/css/site.css`, and the self-hosted font in `docs/assets/fonts/`. No JavaScript, with
+  one exception: a small inline script on the home page picks the lead photo at random and powers
+  its ← → arrows (Koh Panyee without JavaScript). The GitHub heatmap under Now is a snapshot written
+  by `tools/build_heatmap.py`. Grey `class="ph"` blocks are photo placeholders; README.md says how to swap in real photos.
 - `DESIGN.md` holds the design tokens and rules. Follow it for any visual change.
 - Photos: strip all EXIF (including GPS) before committing.
 - The Photos gallery is generated: edit `tools/photos.json` (trips, tags, captions) and run

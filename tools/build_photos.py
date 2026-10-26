@@ -95,6 +95,8 @@ def caption(trip):
     out = f'{html.escape(trip["name"])} <span class="meta">{html.escape(meta)}</span>'
     if trip.get("parts"):
         out += f'<span class="parts">{html.escape(trip["parts"])}</span>'
+    if trip.get("camera"):
+        out += f'<span class="camera">{html.escape(trip["camera"])}</span>'
     if trip.get("note"):
         out += f'<span class="note">{html.escape(trip["note"])}</span>'
     return f"<figcaption>{out}</figcaption>"
