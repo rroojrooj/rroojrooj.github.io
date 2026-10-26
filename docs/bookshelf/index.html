@@ -14,7 +14,10 @@
 </head>
 <body>
 <!--
-  Adding a book: one line in its genre, <li>Title <span class="by">Author</span></li>.
+  Adding a book: one line in its genre (README.md says how to make the two cover files):
+  <li><button class="cover" type="button" popovertarget="cover-slug"><img src="covers/slug.jpg" alt="Cover of Title" width="24" height="36"></button>Title <span class="by">Author</span><img class="large" id="cover-slug" popover src="covers/slug-large.jpg" alt="Cover of Title" width="320" height="500" loading="lazy"></li>
+  The large cover shows beside the small one on hover or keyboard focus, and centred on the page
+  when the small one is clicked or tapped (the HTML popover attribute, no JavaScript).
   The genres flow into columns on wide screens so the whole shelf fits on one screen.
 -->
 <main class="wide books">
@@ -26,110 +29,110 @@
 <section aria-labelledby="investing">
 <h2 id="investing">Investing</h2>
 <ul>
-<li>The Intelligent Investor <span class="by">Benjamin Graham</span></li>
-<li>One Up on Wall Street <span class="by">Peter Lynch</span></li>
-<li>The Most Important Thing Illuminated <span class="by">Howard Marks</span></li>
-<li>University of Berkshire Hathaway <span class="by">Daniel Pecaut &amp; Corey Wrenn</span></li>
-<li>Buffettology <span class="by">Mary Buffett &amp; David Clark</span></li>
-<li>The Psychology of Money <span class="by">Morgan Housel</span></li>
-<li>Rich Dad Poor Dad <span class="by">Robert T. Kiyosaki</span></li>
-<li>The Richest Man in Babylon <span class="by">George S. Clason</span></li>
+<li><button class="cover" type="button" popovertarget="cover-the-intelligent-investor"><img src="covers/the-intelligent-investor.jpg" alt="Cover of The Intelligent Investor" width="24" height="36"></button>The Intelligent Investor <span class="by">Benjamin Graham</span><img class="large" id="cover-the-intelligent-investor" popover src="covers/the-intelligent-investor-large.jpg" alt="Cover of The Intelligent Investor" width="297" height="475" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-one-up-on-wall-street"><img src="covers/one-up-on-wall-street.jpg" alt="Cover of One Up on Wall Street" width="24" height="36"></button>One Up on Wall Street <span class="by">Peter Lynch</span><img class="large" id="cover-one-up-on-wall-street" popover src="covers/one-up-on-wall-street-large.jpg" alt="Cover of One Up on Wall Street" width="290" height="445" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-the-most-important-thing-illuminated"><img src="covers/the-most-important-thing-illuminated.jpg" alt="Cover of The Most Important Thing Illuminated" width="24" height="36"></button>The Most Important Thing Illuminated <span class="by">Howard Marks</span><img class="large" id="cover-the-most-important-thing-illuminated" popover src="covers/the-most-important-thing-illuminated-large.jpg" alt="Cover of The Most Important Thing Illuminated" width="333" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-university-of-berkshire-hathaway"><img src="covers/university-of-berkshire-hathaway.jpg" alt="Cover of University of Berkshire Hathaway" width="24" height="36"></button>University of Berkshire Hathaway <span class="by">Daniel Pecaut &amp; Corey Wrenn</span><img class="large" id="cover-university-of-berkshire-hathaway" popover src="covers/university-of-berkshire-hathaway-large.jpg" alt="Cover of University of Berkshire Hathaway" width="333" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-buffettology"><img src="covers/buffettology.jpg" alt="Cover of Buffettology" width="24" height="36"></button>Buffettology <span class="by">Mary Buffett &amp; David Clark</span><img class="large" id="cover-buffettology" popover src="covers/buffettology-large.jpg" alt="Cover of Buffettology" width="304" height="475" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-the-psychology-of-money"><img src="covers/the-psychology-of-money.jpg" alt="Cover of The Psychology of Money" width="24" height="36"></button>The Psychology of Money <span class="by">Morgan Housel</span><img class="large" id="cover-the-psychology-of-money" popover src="covers/the-psychology-of-money-large.jpg" alt="Cover of The Psychology of Money" width="319" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-rich-dad-poor-dad"><img src="covers/rich-dad-poor-dad.jpg" alt="Cover of Rich Dad Poor Dad" width="24" height="36"></button>Rich Dad Poor Dad <span class="by">Robert T. Kiyosaki</span><img class="large" id="cover-rich-dad-poor-dad" popover src="covers/rich-dad-poor-dad-large.jpg" alt="Cover of Rich Dad Poor Dad" width="333" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-the-richest-man-in-babylon"><img src="covers/the-richest-man-in-babylon.jpg" alt="Cover of The Richest Man in Babylon" width="24" height="36"></button>The Richest Man in Babylon <span class="by">George S. Clason</span><img class="large" id="cover-the-richest-man-in-babylon" popover src="covers/the-richest-man-in-babylon-large.jpg" alt="Cover of The Richest Man in Babylon" width="295" height="500" loading="lazy"></li>
 </ul>
 </section>
 
 <section aria-labelledby="business">
 <h2 id="business">Business</h2>
 <ul>
-<li>Zero to One <span class="by">Peter Thiel</span></li>
-<li>The Lean Startup <span class="by">Eric Ries</span></li>
-<li>The Hard Thing About Hard Things <span class="by">Ben Horowitz</span></li>
-<li>Blitzscaling <span class="by">Reid Hoffman &amp; Chris Yeh</span></li>
-<li>Built to Last <span class="by">Jim Collins &amp; Jerry I. Porras</span></li>
-<li>Trillion Dollar Coach <span class="by">Eric Schmidt, Jonathan Rosenberg &amp; Alan Eagle</span></li>
-<li>Competitive Strategy <span class="by">Michael E. Porter</span></li>
-<li>Getting to Yes <span class="by">Roger Fisher &amp; William Ury</span></li>
-<li>Principles <span class="by">Ray Dalio</span></li>
-<li>The Art of War <span class="by">Sun Tzu</span></li>
+<li><button class="cover" type="button" popovertarget="cover-zero-to-one"><img src="covers/zero-to-one.jpg" alt="Cover of Zero to One" width="24" height="36"></button>Zero to One <span class="by">Peter Thiel</span><img class="large" id="cover-zero-to-one" popover src="covers/zero-to-one-large.jpg" alt="Cover of Zero to One" width="332" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-the-lean-startup"><img src="covers/the-lean-startup.jpg" alt="Cover of The Lean Startup" width="24" height="36"></button>The Lean Startup <span class="by">Eric Ries</span><img class="large" id="cover-the-lean-startup" popover src="covers/the-lean-startup-large.jpg" alt="Cover of The Lean Startup" width="344" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-the-hard-thing-about-hard-things"><img src="covers/the-hard-thing-about-hard-things.jpg" alt="Cover of The Hard Thing About Hard Things" width="24" height="36"></button>The Hard Thing About Hard Things <span class="by">Ben Horowitz</span><img class="large" id="cover-the-hard-thing-about-hard-things" popover src="covers/the-hard-thing-about-hard-things-large.jpg" alt="Cover of The Hard Thing About Hard Things" width="301" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-blitzscaling"><img src="covers/blitzscaling.jpg" alt="Cover of Blitzscaling" width="24" height="36"></button>Blitzscaling <span class="by">Reid Hoffman &amp; Chris Yeh</span><img class="large" id="cover-blitzscaling" popover src="covers/blitzscaling-large.jpg" alt="Cover of Blitzscaling" width="467" height="700" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-built-to-last"><img src="covers/built-to-last.jpg" alt="Cover of Built to Last" width="24" height="36"></button>Built to Last <span class="by">Jim Collins &amp; Jerry I. Porras</span><img class="large" id="cover-built-to-last" popover src="covers/built-to-last-large.jpg" alt="Cover of Built to Last" width="307" height="475" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-trillion-dollar-coach"><img src="covers/trillion-dollar-coach.jpg" alt="Cover of Trillion Dollar Coach" width="24" height="36"></button>Trillion Dollar Coach <span class="by">Eric Schmidt, Jonathan Rosenberg &amp; Alan Eagle</span><img class="large" id="cover-trillion-dollar-coach" popover src="covers/trillion-dollar-coach-large.jpg" alt="Cover of Trillion Dollar Coach" width="331" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-competitive-strategy"><img src="covers/competitive-strategy.jpg" alt="Cover of Competitive Strategy" width="24" height="36"></button>Competitive Strategy <span class="by">Michael E. Porter</span><img class="large" id="cover-competitive-strategy" popover src="covers/competitive-strategy-large.jpg" alt="Cover of Competitive Strategy" width="313" height="475" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-getting-to-yes"><img src="covers/getting-to-yes.jpg" alt="Cover of Getting to Yes" width="24" height="36"></button>Getting to Yes <span class="by">Roger Fisher &amp; William Ury</span><img class="large" id="cover-getting-to-yes" popover src="covers/getting-to-yes-large.jpg" alt="Cover of Getting to Yes" width="309" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-principles"><img src="covers/principles.jpg" alt="Cover of Principles" width="24" height="36"></button>Principles <span class="by">Ray Dalio</span><img class="large" id="cover-principles" popover src="covers/principles-large.jpg" alt="Cover of Principles" width="333" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-the-art-of-war"><img src="covers/the-art-of-war.jpg" alt="Cover of The Art of War" width="24" height="36"></button>The Art of War <span class="by">Sun Tzu</span><img class="large" id="cover-the-art-of-war" popover src="covers/the-art-of-war-large.jpg" alt="Cover of The Art of War" width="304" height="500" loading="lazy"></li>
 </ul>
 </section>
 
 <section aria-labelledby="biography">
 <h2 id="biography">Biography &amp; memoir</h2>
 <ul>
-<li>Titan <span class="by">Ron Chernow</span></li>
-<li>When Breath Becomes Air <span class="by">Paul Kalanithi</span></li>
-<li>Tuesdays with Morrie <span class="by">Mitch Albom</span></li>
+<li><button class="cover" type="button" popovertarget="cover-titan"><img src="covers/titan.jpg" alt="Cover of Titan" width="24" height="36"></button>Titan <span class="by">Ron Chernow</span><img class="large" id="cover-titan" popover src="covers/titan-large.jpg" alt="Cover of Titan" width="337" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-when-breath-becomes-air"><img src="covers/when-breath-becomes-air.jpg" alt="Cover of When Breath Becomes Air" width="24" height="36"></button>When Breath Becomes Air <span class="by">Paul Kalanithi</span><img class="large" id="cover-when-breath-becomes-air" popover src="covers/when-breath-becomes-air-large.jpg" alt="Cover of When Breath Becomes Air" width="305" height="450" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-tuesdays-with-morrie"><img src="covers/tuesdays-with-morrie.jpg" alt="Cover of Tuesdays with Morrie" width="24" height="36"></button>Tuesdays with Morrie <span class="by">Mitch Albom</span><img class="large" id="cover-tuesdays-with-morrie" popover src="covers/tuesdays-with-morrie-large.jpg" alt="Cover of Tuesdays with Morrie" width="318" height="475" loading="lazy"></li>
 </ul>
 </section>
 
 <section aria-labelledby="psychology">
 <h2 id="psychology">Psychology</h2>
 <ul>
-<li>Man's Search for Meaning <span class="by">Viktor E. Frankl</span></li>
-<li>Outliers <span class="by">Malcolm Gladwell</span></li>
-<li>Talking to Strangers <span class="by">Malcolm Gladwell</span></li>
-<li>Men Are from Mars, Women Are from Venus <span class="by">John Gray</span></li>
+<li><button class="cover" type="button" popovertarget="cover-mans-search-for-meaning"><img src="covers/mans-search-for-meaning.jpg" alt="Cover of Man's Search for Meaning" width="24" height="36"></button>Man's Search for Meaning <span class="by">Viktor E. Frankl</span><img class="large" id="cover-mans-search-for-meaning" popover src="covers/mans-search-for-meaning-large.jpg" alt="Cover of Man's Search for Meaning" width="324" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-outliers"><img src="covers/outliers.jpg" alt="Cover of Outliers" width="24" height="36"></button>Outliers <span class="by">Malcolm Gladwell</span><img class="large" id="cover-outliers" popover src="covers/outliers-large.jpg" alt="Cover of Outliers" width="332" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-talking-to-strangers"><img src="covers/talking-to-strangers.jpg" alt="Cover of Talking to Strangers" width="24" height="36"></button>Talking to Strangers <span class="by">Malcolm Gladwell</span><img class="large" id="cover-talking-to-strangers" popover src="covers/talking-to-strangers-large.jpg" alt="Cover of Talking to Strangers" width="336" height="499" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-men-are-from-mars-women-are-from-venus"><img src="covers/men-are-from-mars-women-are-from-venus.jpg" alt="Cover of Men Are from Mars, Women Are from Venus" width="24" height="36"></button>Men Are from Mars, Women Are from Venus <span class="by">John Gray</span><img class="large" id="cover-men-are-from-mars-women-are-from-venus" popover src="covers/men-are-from-mars-women-are-from-venus-large.jpg" alt="Cover of Men Are from Mars, Women Are from Venus" width="323" height="500" loading="lazy"></li>
 </ul>
 </section>
 
 <section aria-labelledby="self-help">
 <h2 id="self-help">Self-help</h2>
 <ul>
-<li>How to Win Friends and Influence People <span class="by">Dale Carnegie</span></li>
-<li>The Almanack of Naval Ravikant <span class="by">Eric Jorgenson</span></li>
-<li>As a Man Thinketh <span class="by">James Allen</span></li>
-<li>Who Moved My Cheese? <span class="by">Spencer Johnson</span></li>
+<li><button class="cover" type="button" popovertarget="cover-how-to-win-friends-and-influence-people"><img src="covers/how-to-win-friends-and-influence-people.jpg" alt="Cover of How to Win Friends and Influence People" width="24" height="36"></button>How to Win Friends and Influence People <span class="by">Dale Carnegie</span><img class="large" id="cover-how-to-win-friends-and-influence-people" popover src="covers/how-to-win-friends-and-influence-people-large.jpg" alt="Cover of How to Win Friends and Influence People" width="298" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-the-almanack-of-naval-ravikant"><img src="covers/the-almanack-of-naval-ravikant.jpg" alt="Cover of The Almanack of Naval Ravikant" width="24" height="36"></button>The Almanack of Naval Ravikant <span class="by">Eric Jorgenson</span><img class="large" id="cover-the-almanack-of-naval-ravikant" popover src="covers/the-almanack-of-naval-ravikant-large.jpg" alt="Cover of The Almanack of Naval Ravikant" width="324" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-as-a-man-thinketh"><img src="covers/as-a-man-thinketh.jpg" alt="Cover of As a Man Thinketh" width="24" height="36"></button>As a Man Thinketh <span class="by">James Allen</span><img class="large" id="cover-as-a-man-thinketh" popover src="covers/as-a-man-thinketh-large.jpg" alt="Cover of As a Man Thinketh" width="301" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-who-moved-my-cheese"><img src="covers/who-moved-my-cheese.jpg" alt="Cover of Who Moved My Cheese?" width="24" height="36"></button>Who Moved My Cheese? <span class="by">Spencer Johnson</span><img class="large" id="cover-who-moved-my-cheese" popover src="covers/who-moved-my-cheese-large.jpg" alt="Cover of Who Moved My Cheese?" width="224" height="346" loading="lazy"></li>
 </ul>
 </section>
 
 <section aria-labelledby="fiction">
 <h2 id="fiction">Fiction</h2>
 <ul>
-<li>Pachinko <span class="by">Min Jin Lee</span></li>
-<li>The Kite Runner <span class="by">Khaled Hosseini</span></li>
-<li>The Song of Achilles <span class="by">Madeline Miller</span></li>
-<li>Norwegian Wood <span class="by">Haruki Murakami</span></li>
-<li>Men Without Women <span class="by">Haruki Murakami</span></li>
-<li>No Longer Human <span class="by">Osamu Dazai</span></li>
-<li>If Cats Disappeared from the World <span class="by">Genki Kawamura</span></li>
-<li>What We Talk About When We Talk About Love <span class="by">Raymond Carver</span></li>
-<li>The Alchemist <span class="by">Paulo Coelho</span></li>
-<li>The Five People You Meet in Heaven <span class="by">Mitch Albom</span></li>
+<li><button class="cover" type="button" popovertarget="cover-pachinko"><img src="covers/pachinko.jpg" alt="Cover of Pachinko" width="24" height="36"></button>Pachinko <span class="by">Min Jin Lee</span><img class="large" id="cover-pachinko" popover src="covers/pachinko-large.jpg" alt="Cover of Pachinko" width="333" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-the-kite-runner"><img src="covers/the-kite-runner.jpg" alt="Cover of The Kite Runner" width="24" height="36"></button>The Kite Runner <span class="by">Khaled Hosseini</span><img class="large" id="cover-the-kite-runner" popover src="covers/the-kite-runner-large.jpg" alt="Cover of The Kite Runner" width="313" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-the-song-of-achilles"><img src="covers/the-song-of-achilles.jpg" alt="Cover of The Song of Achilles" width="24" height="36"></button>The Song of Achilles <span class="by">Madeline Miller</span><img class="large" id="cover-the-song-of-achilles" popover src="covers/the-song-of-achilles-large.jpg" alt="Cover of The Song of Achilles" width="318" height="471" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-norwegian-wood"><img src="covers/norwegian-wood.jpg" alt="Cover of Norwegian Wood" width="24" height="36"></button>Norwegian Wood <span class="by">Haruki Murakami</span><img class="large" id="cover-norwegian-wood" popover src="covers/norwegian-wood-large.jpg" alt="Cover of Norwegian Wood" width="305" height="475" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-men-without-women"><img src="covers/men-without-women.jpg" alt="Cover of Men Without Women" width="24" height="36"></button>Men Without Women <span class="by">Haruki Murakami</span><img class="large" id="cover-men-without-women" popover src="covers/men-without-women-large.jpg" alt="Cover of Men Without Women" width="323" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-no-longer-human"><img src="covers/no-longer-human.jpg" alt="Cover of No Longer Human" width="24" height="36"></button>No Longer Human <span class="by">Osamu Dazai</span><img class="large" id="cover-no-longer-human" popover src="covers/no-longer-human-large.jpg" alt="Cover of No Longer Human" width="312" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-if-cats-disappeared-from-the-world"><img src="covers/if-cats-disappeared-from-the-world.jpg" alt="Cover of If Cats Disappeared from the World" width="24" height="36"></button>If Cats Disappeared from the World <span class="by">Genki Kawamura</span><img class="large" id="cover-if-cats-disappeared-from-the-world" popover src="covers/if-cats-disappeared-from-the-world-large.jpg" alt="Cover of If Cats Disappeared from the World" width="333" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-what-we-talk-about-when-we-talk-about-love"><img src="covers/what-we-talk-about-when-we-talk-about-love.jpg" alt="Cover of What We Talk About When We Talk About Love" width="24" height="36"></button>What We Talk About When We Talk About Love <span class="by">Raymond Carver</span><img class="large" id="cover-what-we-talk-about-when-we-talk-about-love" popover src="covers/what-we-talk-about-when-we-talk-about-love-large.jpg" alt="Cover of What We Talk About When We Talk About Love" width="317" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-the-alchemist"><img src="covers/the-alchemist.jpg" alt="Cover of The Alchemist" width="24" height="36"></button>The Alchemist <span class="by">Paulo Coelho</span><img class="large" id="cover-the-alchemist" popover src="covers/the-alchemist-large.jpg" alt="Cover of The Alchemist" width="331" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-the-five-people-you-meet-in-heaven"><img src="covers/the-five-people-you-meet-in-heaven.jpg" alt="Cover of The Five People You Meet in Heaven" width="24" height="36"></button>The Five People You Meet in Heaven <span class="by">Mitch Albom</span><img class="large" id="cover-the-five-people-you-meet-in-heaven" popover src="covers/the-five-people-you-meet-in-heaven-large.jpg" alt="Cover of The Five People You Meet in Heaven" width="343" height="500" loading="lazy"></li>
 </ul>
 </section>
 
 <section aria-labelledby="classics">
 <h2 id="classics">Classics</h2>
 <ul>
-<li>Paradise Lost <span class="by">John Milton</span></li>
-<li>The Picture of Dorian Gray <span class="by">Oscar Wilde</span></li>
-<li>The Little Prince <span class="by">Antoine de Saint-Exupéry</span></li>
-<li>Of Mice and Men <span class="by">John Steinbeck</span></li>
-<li>The Catcher in the Rye <span class="by">J. D. Salinger</span></li>
-<li>Lord of the Flies <span class="by">William Golding</span></li>
-<li>Fahrenheit 451 <span class="by">Ray Bradbury</span></li>
+<li><button class="cover" type="button" popovertarget="cover-paradise-lost"><img src="covers/paradise-lost.jpg" alt="Cover of Paradise Lost" width="24" height="36"></button>Paradise Lost <span class="by">John Milton</span><img class="large" id="cover-paradise-lost" popover src="covers/paradise-lost-large.jpg" alt="Cover of Paradise Lost" width="302" height="475" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-the-picture-of-dorian-gray"><img src="covers/the-picture-of-dorian-gray.jpg" alt="Cover of The Picture of Dorian Gray" width="24" height="36"></button>The Picture of Dorian Gray <span class="by">Oscar Wilde</span><img class="large" id="cover-the-picture-of-dorian-gray" popover src="covers/the-picture-of-dorian-gray-large.jpg" alt="Cover of The Picture of Dorian Gray" width="291" height="450" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-the-little-prince"><img src="covers/the-little-prince.jpg" alt="Cover of The Little Prince" width="24" height="36"></button>The Little Prince <span class="by">Antoine de Saint-Exupéry</span><img class="large" id="cover-the-little-prince" popover src="covers/the-little-prince-large.jpg" alt="Cover of The Little Prince" width="328" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-of-mice-and-men"><img src="covers/of-mice-and-men.jpg" alt="Cover of Of Mice and Men" width="24" height="36"></button>Of Mice and Men <span class="by">John Steinbeck</span><img class="large" id="cover-of-mice-and-men" popover src="covers/of-mice-and-men-large.jpg" alt="Cover of Of Mice and Men" width="304" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-the-catcher-in-the-rye"><img src="covers/the-catcher-in-the-rye.jpg" alt="Cover of The Catcher in the Rye" width="24" height="36"></button>The Catcher in the Rye <span class="by">J. D. Salinger</span><img class="large" id="cover-the-catcher-in-the-rye" popover src="covers/the-catcher-in-the-rye-large.jpg" alt="Cover of The Catcher in the Rye" width="310" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-lord-of-the-flies"><img src="covers/lord-of-the-flies.jpg" alt="Cover of Lord of the Flies" width="24" height="36"></button>Lord of the Flies <span class="by">William Golding</span><img class="large" id="cover-lord-of-the-flies" popover src="covers/lord-of-the-flies-large.jpg" alt="Cover of Lord of the Flies" width="316" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-fahrenheit-451"><img src="covers/fahrenheit-451.jpg" alt="Cover of Fahrenheit 451" width="24" height="36"></button>Fahrenheit 451 <span class="by">Ray Bradbury</span><img class="large" id="cover-fahrenheit-451" popover src="covers/fahrenheit-451-large.jpg" alt="Cover of Fahrenheit 451" width="311" height="500" loading="lazy"></li>
 </ul>
 </section>
 
 <section aria-labelledby="thrillers">
 <h2 id="thrillers">Thrillers</h2>
 <ul>
-<li>Verity <span class="by">Colleen Hoover</span></li>
-<li>Origin <span class="by">Dan Brown</span></li>
+<li><button class="cover" type="button" popovertarget="cover-verity"><img src="covers/verity.jpg" alt="Cover of Verity" width="24" height="36"></button>Verity <span class="by">Colleen Hoover</span><img class="large" id="cover-verity" popover src="covers/verity-large.jpg" alt="Cover of Verity" width="324" height="499" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-origin"><img src="covers/origin.jpg" alt="Cover of Origin" width="24" height="36"></button>Origin <span class="by">Dan Brown</span><img class="large" id="cover-origin" popover src="covers/origin-large.jpg" alt="Cover of Origin" width="329" height="500" loading="lazy"></li>
 </ul>
 </section>
 
 <section aria-labelledby="textbooks">
 <h2 id="textbooks">Textbooks</h2>
 <ul>
-<li>Ice Cream <span class="by">H. Douglas Goff &amp; Richard W. Hartel</span></li>
-<li>Introduction to Computer Security <span class="by">Michael T. Goodrich &amp; Roberto Tamassia</span></li>
+<li><button class="cover" type="button" popovertarget="cover-ice-cream"><img src="covers/ice-cream.jpg" alt="Cover of Ice Cream" width="24" height="36"></button>Ice Cream <span class="by">H. Douglas Goff &amp; Richard W. Hartel</span><img class="large" id="cover-ice-cream" popover src="covers/ice-cream-large.jpg" alt="Cover of Ice Cream" width="333" height="500" loading="lazy"></li>
+<li><button class="cover" type="button" popovertarget="cover-introduction-to-computer-security"><img src="covers/introduction-to-computer-security.jpg" alt="Cover of Introduction to Computer Security" width="24" height="36"></button>Introduction to Computer Security <span class="by">Michael T. Goodrich &amp; Roberto Tamassia</span><img class="large" id="cover-introduction-to-computer-security" popover src="covers/introduction-to-computer-security-large.jpg" alt="Cover of Introduction to Computer Security" width="379" height="500" loading="lazy"></li>
 </ul>
 </section>
 </div>
 
 <footer>
-<p>Last updated 25 October 2026</p>
+<p>Last updated 26 October 2026</p>
 </footer>
 </main>
 </body>
