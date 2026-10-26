@@ -3,7 +3,7 @@
 
 Fetches the past year of contributions for one GitHub user and rewrites only the part of the home
 page between the heatmap markers: a grid of plain <span> cells, one per day, which site.css draws
-in ink tones (no green). It is a snapshot: run it again whenever you want it fresh:
+in Bristol red (the --heat-* tokens). It is a snapshot: run it again whenever you want it fresh:
 
     python3 tools/build_heatmap.py
 

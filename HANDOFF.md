@@ -292,3 +292,13 @@ only their own rows narrow.
   the text colour, mixed with color-mix so hover labels stay solid) and a hover label on every day
   ("22 contributions · 14 May 2026"), pure CSS from each cell's data-tip. Labels near either edge
   open inwards. No accent colour, per DESIGN.md; Rooj asked whether the palette felt dull.
+- Wim's Lab photos (26 Oct 2026, from Rooj): three flavour shots (matcha and coconut, chocolate with
+  brownie, a cookie flavour with brownie and yellow cubes) cropped square around the cup, without
+  the "wim's lab ice cream" header, at 360px in `docs/assets/home/wims-*.jpg`. They sit in a row of
+  three under the Wim's Lab line. The Tokyo-medal gelato thumb is gone. Flavour names other than
+  matcha and chocolate are unconfirmed, so the alt text describes what is visible.
+- Heatmap is now Bristol red (Rooj's choice over terracotta and sepia): `--heat-0..4` tokens in
+  site.css, light #EFECE4 → #F0D2D4 → #DE949A → #C4505B → #AB1F2D; dark #201F1B → #3F1A1E →
+  #6E2530 → #AB1F2D → #E0626E. Empty days are a near-page tint so they no longer look like activity.
+- The three gelato photos are recropped from the logo on each cup, so every cup is the same size and
+  height and centred: matcha, chocolate, cookies (light, dark, light).

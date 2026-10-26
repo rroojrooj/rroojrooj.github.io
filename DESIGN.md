@@ -195,7 +195,9 @@ Square corners everywhere, photos included. Nothing on the page is a pill, a car
   the home page's lead photo is picked at random on each visit by a small inline script, with no
   motion and Koh Panyee as the no-JavaScript fallback. Two muted text arrows (← →) at the right of
   its caption step through the six photos; they stay hidden without JavaScript.
-- Don't use colour for emphasis or add an accent colour.
+- Don't use colour for emphasis or add an accent colour. One exception (26 Oct 2026, Rooj's pick):
+  the GitHub heatmap runs from a near-invisible empty day up to Bristol red `#AB1F2D` (the
+  `--heat-*` tokens, with a lighter top step in dark mode). Nothing else on the site uses it.
 - Keep CV material short: since 26 Oct 2026 a visible Experience block (education, past employers) sits
   under Now, at Rooj's request. No bootcamp stats or full job timeline; the detail lives on LinkedIn.
 - Don't turn project entries into product pages: no feature lists or how-it-works. Write about the
@@ -224,3 +226,4 @@ Square corners everywhere, photos included. Nothing on the page is a pill, a car
 | 2026-10-26 | Now entries: name as its own heading (18px/600), role and start month on a muted line below, a thin rule between entries | Rooj found Belfort and Wim's Lab hard to tell apart when name, role and text all ran at body size |
 | 2026-10-26 | Scan first, read later: Now is one line per project; Experience (visible) follows; the long stories (Why I'm building Belfort, Bristol Blockchain Society) sit below Outside work | Rooj found the top too text-heavy and wanted his work experience shown, not folded; Belfort links down to its story |
 | 2026-10-26 | Belfort's story goes back under Belfort as a closed dropdown; when open it is set off by a thin left rule | Rooj wanted the story next to Belfort but the top still easy to scan |
+| 2026-10-26 | Heatmap in Bristol red, empty days almost invisible | Rooj found grey ink dull and zero days read as activity; red ink on cream suits the paper look, and Bristol is where he studied. Terracotta and sepia were the runners-up |
