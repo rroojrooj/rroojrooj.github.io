@@ -163,15 +163,23 @@ Square corners everywhere, photos included. Nothing on the page is a pill, a car
   hidden (`figure:has(.ph)`, `.thumb:has(.ph)`, `.year:not(:has(img))`), so the live page never
   shows draft boxes. Captions read "Place, Year" on both pages: short, no month (Rooj's choice,
   25 Oct 2026). EXIF, including GPS, is stripped first.
-- **Photos page gallery (26 Oct 2026):** Rooj wants the screen full of photos with no wasted
-  space. The page widens to 1680px and is a packed gallery: every row ("band") runs the full
-  width and every photo in a band shares one height, so there is no blank space beside or under
-  photos. Photos are grouped by place or race, captioned once underneath (place or race, then the
-  year, and the time for races, in muted text) with an optional short note. A place too wide for
-  one band continues on bands of its own; a continued place never shares a band with another.
-  Years run newest first (the order of places inside a year is chosen so bands pack well);
-  Running comes last. No intro sentence: the title and the year links are enough. On phones,
-  groups stack and their photos wrap into rows that still share a height.
+- **Photos page: trips and filters (26 Oct 2026):** Rooj wants the screen full of photos with no
+  wasted space, and photos kept with the trip they belong to (Cape of Good Hope beside the Cape
+  Town Marathon), not split into a hard-coded Running section. The unit is the **trip**: a
+  journey abroad, or a race or a run of runs at home, holding all its photos whatever their
+  source. Trips run newest first, each captioned once: name and year (plus the time for a race),
+  a muted line naming what's in it, and an optional note. Trips carry tags; a tag that covers at
+  least 3 trips or 12 photos becomes a filter: **All · Running · Islands · Thailand · Film**.
+  One filter at a time (mixing happens in the tags, since a trip can be Running and Thailand);
+  the chosen one reads like the current page in the nav. Filters are links (`#running`), so they
+  can be shared and Back works; CSS (`:has(:target)`) shows the matching view, no JavaScript.
+  Every view is packed separately into full-width rows where every photo shares one height. The
+  page is written from `tools/photos.json` by `tools/build_photos.py`, a local helper, not a
+  build step. No intro sentence: the title and the filters are enough. On phones trips stack,
+  photos pair up, and an odd last photo keeps its partner's size.
+  Rejected: a combinable-checkbox wall (with 59 photos most combinations show nothing, and
+  per-photo captions lose the stories), a map (GPS is stripped; map tiles are third-party),
+  search, shuffle, view switchers and a lightbox.
 - **Footer:** one optional line of invitation, then "Last updated …".
 
 ## Do's and Don'ts

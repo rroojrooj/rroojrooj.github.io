@@ -31,6 +31,9 @@ Rooj Rinchokechai's personal site. Plain HTML + CSS served by GitHub Pages, no b
   `class="ph"` blocks are photo placeholders; README.md says how to swap in real photos.
 - `DESIGN.md` holds the design tokens and rules. Follow it for any visual change.
 - Photos: strip all EXIF (including GPS) before committing.
+- The Photos gallery is generated: edit `tools/photos.json` (trips, tags, captions) and run
+  `python3 tools/build_photos.py`. Never hand-edit between the build markers in
+  `docs/photos/index.html`. The filters are CSS only.
 - The repo is public. Don't commit private notes or session transcripts.
 
 ## Checking a change

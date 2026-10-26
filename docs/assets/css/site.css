@@ -145,9 +145,26 @@ details > div { display: flex; flex-direction: column; gap: 14px; }
 
 .page-intro { display: flex; flex-direction: column; gap: 8px; }
 .page-intro p { text-wrap: pretty; }
-/* Jump links to each year and to Running: the page is long, so say what's on it up front.
-   Spacing alone separates them (they're underlined), so nothing dangles when the line wraps. */
-.jump { display: flex; flex-wrap: wrap; column-gap: 18px; row-gap: 6px; font-size: 16px; }
+/* Filters: All · Running · Islands · Thailand · Film. Each link points at an empty target at the
+   top of the page (so following it doesn't scroll), and CSS shows the matching view. The chosen
+   filter reads like the current page in the nav: text colour, no underline. Without :has()
+   support every browser still shows All. To add a filter: a tag in tools/photos.json plus one
+   selector in each of the two rules below. */
+/* Out of the page flow (no gaps) and pinned to the top, so following a filter link never scrolls. */
+.filter-target { position: absolute; top: 0; left: 0; width: 1px; height: 1px; }
+.filters { display: flex; flex-wrap: wrap; column-gap: 18px; row-gap: 6px; font-size: 16px; }
+.filters a { color: var(--muted); }
+.view:not([data-view="all"]) { display: none; }
+.photos-page:has(.filter-target:target:not(#all)) .view[data-view="all"] { display: none; }
+.photos-page:has(#running:target) .view[data-view="running"],
+.photos-page:has(#islands:target) .view[data-view="islands"],
+.photos-page:has(#thailand:target) .view[data-view="thailand"],
+.photos-page:has(#film:target) .view[data-view="film"] { display: flex; }
+.photos-page:not(:has(.filter-target:target:not(#all))) .filters a[href="#all"],
+.photos-page:has(#running:target) .filters a[href="#running"],
+.photos-page:has(#islands:target) .filters a[href="#islands"],
+.photos-page:has(#thailand:target) .filters a[href="#thailand"],
+.photos-page:has(#film:target) .filters a[href="#film"] { color: var(--text); text-decoration: none; }
 
 /* The gallery fills the window: rows ("bands") always run the full width, and every photo in a
    band shares one height. A band holds one or more groups (one place or race, captioned once
@@ -155,16 +172,17 @@ details > div { display: flex; flex-direction: column; gap: 14px; }
    inner gaps (--gaps), and each photo grows by its aspect ratio (--ar), so heights match across
    the whole band. Grow factors are scaled by 1000 so a lone portrait still fills its share. */
 main.photos-page { max-width: 1680px; }
-.gallery { display: flex; flex-direction: column; gap: 28px; }
-.gallery h2 { margin: 28px 0 0; }
+.view { display: flex; flex-direction: column; gap: 28px; }
 .band { display: flex; gap: 24px; align-items: flex-start; }
+/* A trip that continues onto the next band sits as close to it as its photos sit to each other. */
+.band.cont { margin-top: -22px; }
 .group { flex: calc(var(--sum) * 1000) 1 var(--gaps); min-width: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
 .photos { display: flex; gap: 6px; }
 .photos > a { flex: calc(var(--ar) * 1000) 1 0; min-width: 0; display: block; text-decoration: none; }
 .group > figcaption { margin: 0; font-size: 15px; color: var(--text); }
 /* No left margin: when a narrow group wraps its caption, the year and time start flush. */
 .group .meta { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
-.group .note { display: block; margin-top: 2px; font-size: 14px; color: var(--muted); }
+.group .parts, .group .note { display: block; margin-top: 2px; font-size: 14px; color: var(--muted); }
 
 /* ---------- Bookshelf ---------- */
 
@@ -211,4 +229,6 @@ figure:has(.ph), .thumb:has(.ph), .year:not(:has(img)) { display: none; }
   .group { flex: none; width: 100%; }
   .photos { flex-wrap: wrap; }
   .photos > a { flex: calc(var(--ar) * 1000) 1 calc(var(--ar) * 170px); }
+  /* An invisible portrait-sized filler, so an odd last photo keeps its partner's height. */
+  .photos::after { content: ""; flex: 750 1 calc(0.75 * 170px); }
 }

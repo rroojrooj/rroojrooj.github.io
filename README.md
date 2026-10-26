@@ -24,12 +24,12 @@ all its placeholders are replaced.
 
 1. Remove all EXIF data, including GPS location.
 2. Resize to about 2000px on the long edge. For the Photos page, also make an 800px thumbnail.
-3. **Photos page:** save as `docs/photos/<year>/<slug>.jpg` and `docs/photos/<year>/<slug>-800.jpg`,
-   then add a group (one race or one place, captioned once) to a band near the rest of that
-   year. Every band fills the full width, so keep each band's photos to about four or five
-   portraits or two or three landscapes. The exact markup and the numbers to set are in the
-   comment at the top of `docs/photos/index.html`. Running photos go in `docs/photos/running/`
-   and the Running section; race captions read "Race · Year · time".
+3. **Photos page:** save as `docs/photos/<year>/<slug>.jpg` and `docs/photos/<year>/<slug>-800.jpg`
+   (running photos in `docs/photos/running/`). Add the photo to its trip in `tools/photos.json`,
+   or add a new trip in date order (newest first), with its tags. Then run
+   `python3 tools/build_photos.py`, which rewrites the gallery and packs every filter view into
+   full rows. Never edit the gallery between the build markers by hand. To add a filter, add it to
+   `filters` in the JSON and add one selector to each of the two filter rules in `site.css`.
 4. **Home page:** save under `docs/assets/home/` and replace the matching placeholder
    `<div class="ph">` or `<span class="ph">` with an `<img>` of the same shape. The comment at the
    top of `docs/index.html` shows how.

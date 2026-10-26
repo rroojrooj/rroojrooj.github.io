@@ -1,0 +1,469 @@
+{
+ "_readme": "Trips for docs/photos/index.html, newest first. Each trip: name, year, optional parts (a muted second line naming what is in it), optional time (races), optional note, tags, photos (src without .jpg, alt). A tag listed in filters becomes a filter link. After editing, run: python3 tools/build_photos.py",
+ "filters": [
+  {
+   "id": "all",
+   "label": "All"
+  },
+  {
+   "id": "running",
+   "label": "Running"
+  },
+  {
+   "id": "islands",
+   "label": "Islands"
+  },
+  {
+   "id": "thailand",
+   "label": "Thailand"
+  },
+  {
+   "id": "film",
+   "label": "Film"
+  }
+ ],
+ "trips": [
+  {
+   "name": "Krabi and Phang Nga",
+   "year": "2026",
+   "parts": "A run in Phang Nga · Koh Hong",
+   "tags": [
+    "running",
+    "islands",
+    "thailand"
+   ],
+   "photos": [
+    {
+     "src": "running/phang-nga",
+     "alt": "Limestone islands across a calm bay under a tall cloud"
+    },
+    {
+     "src": "2026/koh-hong-lagoon",
+     "alt": "A white-sand lagoon between limestone cliffs, seen through trees"
+    },
+    {
+     "src": "2026/koh-hong",
+     "alt": "Jungle-covered limestone cliffs above the sea"
+    }
+   ]
+  },
+  {
+   "name": "Komodo National Park",
+   "year": "2026",
+   "tags": [
+    "islands"
+   ],
+   "photos": [
+    {
+     "src": "2026/komodo-viewpoint",
+     "alt": "Bare brown hills and curving bays, people on the viewpoint path"
+    },
+    {
+     "src": "2026/komodo-bays",
+     "alt": "Curving bays between bare hills at dusk"
+    },
+    {
+     "src": "2026/komodo-dusk",
+     "alt": "Bays and ridges at dusk, a boat moored below"
+    },
+    {
+     "src": "2026/komodo-sunset",
+     "alt": "Dark hills around a bay under an orange sky"
+    },
+    {
+     "src": "2026/komodo-ridge",
+     "alt": "A ridge in silhouette against the sunset"
+    }
+   ]
+  },
+  {
+   "name": "South Africa",
+   "year": "2026",
+   "parts": "Cape Town Marathon with my dad, 4:18:43 · a run near Pilanesberg · Cape of Good Hope",
+   "note": "My second marathon, and my first with my dad, who has run all the World Marathon Majors.",
+   "tags": [
+    "running",
+    "family"
+   ],
+   "photos": [
+    {
+     "src": "running/cape-town-marathon-finish",
+     "alt": "Two finishers with their medals and race bibs, Signal Hill behind"
+    },
+    {
+     "src": "running/cape-town-marathon-medals",
+     "alt": "Two Cape Town Marathon 2026 medals held up in front of Signal Hill"
+    },
+    {
+     "src": "running/pilanesberg-sunset",
+     "alt": "Sunset over low hills and bush"
+    },
+    {
+     "src": "running/pilanesberg-road",
+     "alt": "A quiet road through the hills at dusk, a runner in the distance"
+    },
+    {
+     "src": "2026/cape-of-good-hope",
+     "alt": "The Cape of Good Hope sign below rocky cliffs and surf"
+    }
+   ]
+  },
+  {
+   "name": "Kanchanaburi",
+   "year": "2026",
+   "tags": [
+    "thailand"
+   ],
+   "photos": [
+    {
+     "src": "2026/kanchanaburi-veranda",
+     "alt": "A wooden veranda looking over a lake and hills at dusk"
+    }
+   ]
+  },
+  {
+   "name": "Maldives",
+   "year": "2026",
+   "tags": [
+    "islands",
+    "diving"
+   ],
+   "photos": [
+    {
+     "src": "2026/maldives-stingray",
+     "alt": "A diver making a peace sign beside a stingray and a school of fish"
+    },
+    {
+     "src": "2026/maldives-whale-shark",
+     "alt": "A whale shark passing a diver over sand, in black and white"
+    },
+    {
+     "src": "2026/maldives-manta-bw",
+     "alt": "A diver below a manta ray, in black and white"
+    },
+    {
+     "src": "2026/maldives-nurse-sharks",
+     "alt": "Divers kneeling on sand among nurse sharks"
+    },
+    {
+     "src": "2026/maldives-manta",
+     "alt": "A diver and a manta ray in blue water"
+    }
+   ]
+  },
+  {
+   "name": "Japan",
+   "year": "2026",
+   "parts": "Tokyo Marathon with my cousin, 4:12:11 · Ito",
+   "note": "My first marathon. The medal with our Matcha Coconut, made with matcha from Tokyo.",
+   "tags": [
+    "running",
+    "family",
+    "golf",
+    "japan"
+   ],
+   "photos": [
+    {
+     "src": "running/tokyo-marathon-towels",
+     "alt": "Two runners in Tokyo Marathon finisher towels outside Tokyo Station"
+    },
+    {
+     "src": "running/tokyo-marathon-medal",
+     "alt": "A Tokyo Marathon 2026 medal held beside a tub of matcha coconut gelato"
+    },
+    {
+     "src": "running/tokyo-marathon-station",
+     "alt": "Two runners resting outside Tokyo Station after the marathon"
+    },
+    {
+     "src": "2026/ito-coast",
+     "alt": "A golf course running down to the sea"
+    },
+    {
+     "src": "2026/ito-cliffs",
+     "alt": "A cliff-top golf course above the Pacific"
+    }
+   ]
+  },
+  {
+   "name": "TCS New York City Marathon 5K",
+   "year": "2025",
+   "time": "24:24",
+   "tags": [
+    "running"
+   ],
+   "photos": [
+    {
+     "src": "running/new-york-5k",
+     "alt": "A runner with a race bib between two New York police officers"
+    }
+   ]
+  },
+  {
+   "name": "TCS Sydney Marathon 10K",
+   "year": "2025",
+   "time": "49:40",
+   "tags": [
+    "running"
+   ],
+   "photos": [
+    {
+     "src": "running/sydney-10k-medal",
+     "alt": "A Sydney 10K medal held up near the finish"
+    },
+    {
+     "src": "running/sydney-10k-watch",
+     "alt": "A running watch showing 49:40 for the Sydney 10K"
+    }
+   ]
+  },
+  {
+   "name": "Bangkok runs",
+   "year": "2025",
+   "tags": [
+    "running",
+    "thailand"
+   ],
+   "photos": [
+    {
+     "src": "running/bangkok-skyline",
+     "alt": "The Bangkok skyline at sunset beyond a dark park"
+    },
+    {
+     "src": "running/bangkok-dusk",
+     "alt": "A Bangkok street at dusk under a pink sky"
+    }
+   ]
+  },
+  {
+   "name": "Bristol runs",
+   "year": "2024–2025",
+   "tags": [
+    "running"
+   ],
+   "photos": [
+    {
+     "src": "running/bristol-avon-path",
+     "alt": "A riverside path below the cliffs of the Avon Gorge"
+    },
+    {
+     "src": "running/bristol-road-closure",
+     "alt": "A Great Bristol Run road-closure sign beside the river"
+    },
+    {
+     "src": "running/bristol-harbour",
+     "alt": "Colourful houses above Bristol harbour, a canoe on the water"
+    },
+    {
+     "src": "running/bristol-suspension-bridge",
+     "alt": "The Clifton Suspension Bridge above the Avon Gorge road"
+    },
+    {
+     "src": "running/bristol-harbour-sunset",
+     "alt": "Tall ship masts in Bristol harbour at sunset"
+    },
+    {
+     "src": "running/bristol-night-bridge",
+     "alt": "The Clifton Suspension Bridge lit up at night above the river"
+    }
+   ]
+  },
+  {
+   "name": "Great Bristol Run 10K",
+   "year": "2025",
+   "time": "55:30",
+   "tags": [
+    "running"
+   ],
+   "photos": [
+    {
+     "src": "running/bristol-10k-flags",
+     "alt": "Great Bristol Run flags beside pastel Bristol houses"
+    },
+    {
+     "src": "running/bristol-10k-medal",
+     "alt": "A Great Bristol Run medal held up over the harbour"
+    },
+    {
+     "src": "running/bristol-10k-finish",
+     "alt": "Runners walking past the showers after the Great Bristol Run"
+    }
+   ]
+  },
+  {
+   "name": "Koh Tao",
+   "year": "2025",
+   "tags": [
+    "islands",
+    "thailand",
+    "film"
+   ],
+   "photos": [
+    {
+     "src": "2025/koh-tao-beach",
+     "alt": "A beach seen from under a tree, people in deckchairs, the sea beyond"
+    }
+   ]
+  },
+  {
+   "name": "Bath Half",
+   "year": "2025",
+   "time": "1:53:13",
+   "tags": [
+    "running"
+   ],
+   "photos": [
+    {
+     "src": "running/bath-half-medal",
+     "alt": "A Bath Half medal held up in front of the Royal Crescent"
+    }
+   ]
+  },
+  {
+   "name": "Wembley",
+   "year": "2025",
+   "tags": [
+    "film",
+    "football"
+   ],
+   "photos": [
+    {
+     "src": "2025/wembley",
+     "alt": "A full Wembley Stadium during the Carabao Cup final"
+    }
+   ]
+  },
+  {
+   "name": "Koh Yao Noi",
+   "year": "2024",
+   "tags": [
+    "islands",
+    "thailand"
+   ],
+   "photos": [
+    {
+     "src": "2024/koh-yao-noi-path",
+     "alt": "A path to the sea past a red-roofed hut, islands beyond"
+    },
+    {
+     "src": "2024/koh-yao-noi-bay",
+     "alt": "Limestone islands across a calm bay, seen from the beach"
+    }
+   ]
+  },
+  {
+   "name": "Koh Panyee and Phang Nga Bay",
+   "year": "2022",
+   "tags": [
+    "film",
+    "islands",
+    "thailand"
+   ],
+   "photos": [
+    {
+     "src": "2022/koh-panyee-pitch",
+     "alt": "The floating football pitch at Koh Panyee, a person walking across it, in black and white"
+    },
+    {
+     "src": "2022/koh-panyee",
+     "alt": "Evening light on a limestone island beside the Koh Panyee stilt village"
+    },
+    {
+     "src": "2022/phang-nga-bay",
+     "alt": "Limestone islands in silhouette over the water at dusk"
+    }
+   ]
+  },
+  {
+   "name": "Kanchanaburi",
+   "year": "2020",
+   "tags": [
+    "film",
+    "thailand"
+   ],
+   "photos": [
+    {
+     "src": "2020/kanchanaburi-river",
+     "alt": "A wide river reflecting white clouds, hills in the distance"
+    }
+   ]
+  },
+  {
+   "name": "Bangkok",
+   "year": "2019",
+   "tags": [
+    "film",
+    "thailand"
+   ],
+   "photos": [
+    {
+     "src": "2019/bangkok-river",
+     "alt": "The Chao Phraya at sunset, flags on a pier and a bridge in the distance"
+    }
+   ]
+  },
+  {
+   "name": "Stockholm, Helsinki and Copenhagen",
+   "year": "2019",
+   "tags": [
+    "film"
+   ],
+   "photos": [
+    {
+     "src": "2019/stockholm-sunset",
+     "alt": "A pink and violet sunset over dark rooftops"
+    },
+    {
+     "src": "2019/stockholm-ferry",
+     "alt": "A pink sunset over calm water and a low line of islands"
+    },
+    {
+     "src": "2019/helsinki-harbour",
+     "alt": "Helsinki harbour with a Ferris wheel and a large ferry"
+    },
+    {
+     "src": "2019/copenhagen-dusk",
+     "alt": "Copenhagen's skyline and a canal at dusk, in black and white"
+    },
+    {
+     "src": "2019/nyhavn",
+     "alt": "Colourful houses and old wooden boats along Nyhavn"
+    },
+    {
+     "src": "2019/nyhavn-skagen",
+     "alt": "Yellow and white houses on Nyhavn in low winter light"
+    },
+    {
+     "src": "2019/nyhavn-bw",
+     "alt": "Nyhavn's houses and moored sailing boats, in black and white"
+    }
+   ]
+  },
+  {
+   "name": "Hokkaido",
+   "year": "2019",
+   "tags": [
+    "film",
+    "japan"
+   ],
+   "photos": [
+    {
+     "src": "2019/sapporo-yodobashi",
+     "alt": "Two taxis waiting outside the lit-up Yodobashi Camera store at night"
+    },
+    {
+     "src": "2019/sapporo-night",
+     "alt": "A city street at night with streaks of car lights"
+    },
+    {
+     "src": "2019/hokkaido-lake",
+     "alt": "A lake between dark mountains, the sun breaking through cloud"
+    },
+    {
+     "src": "2019/biei-road",
+     "alt": "A straight road running down between fields towards blue hills"
+    }
+   ]
+  }
+ ]
+}
