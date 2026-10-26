@@ -158,7 +158,8 @@ edition. The two guessed textbooks use: Ice Cream, 7th edition (Goff & Hartel, S
 scan is the 2015 paperback); and Introduction to Computer Security, 1st edition (Goodrich & Tamassia,
 Addison-Wesley, 2011).
 To fit the covers on one screen, the column gap went from 28px to 24px, which gives five columns at
-1280px (four columns had run to 817px). At 1280×800 the last book now ends at 709px. At 1024×700 the
+1280px (four columns had run to 817px); Rooj chose this over squeezing four columns. At 1280×800
+the last book now ends at 709px. At 1024×700 the
 shelf is four columns and scrolls, as it did before (834px, against 829px without covers). Checked
 in Chromium only. Safari 26+ and Firefox 147+ support the anchor positioning used for the
 side-by-side preview; older browsers show the preview in the middle of the window instead.
